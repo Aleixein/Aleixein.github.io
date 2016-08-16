@@ -1,7 +1,7 @@
 var miCanvas = document.getElementById("miCanvas");
-var contexto1 = miCanvas.getContext1("2d");
-var contexto2 = miCanvas.getContext2("2d");
-var contexto3 = miCanvas.getContext3("2d");
+var contexto1 = miCanvas.getContext("2d");
+var contexto2 = miCanvas.getContext("2d");
+var contexto3 = miCanvas.getContext("2d");
 
 contexto1.fillStyle = "red";
 contexto1.fillRect(30,30,50,50);
