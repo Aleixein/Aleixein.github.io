@@ -5,7 +5,7 @@ var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
 var forma_tronco = new THREE.CylinderGeometry(2,2,5,20);
-var textura_madera = new THREE.TextureLoader().load( "textures/water.jpg" );
+var textura_madera = new THREE.TextureLoader().load( "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnQwwrY6MTVWD5CRvroaJaRQ2zUpcqqt9nUvdk7cZUBXSFLrFH" );
 texture.wrapS = THREE.RepeatWrapping;
 texture.wrapT = THREE.RepeatWrapping;
 texture.repeat.set( 4, 4 );
