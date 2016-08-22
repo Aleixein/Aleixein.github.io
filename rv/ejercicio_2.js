@@ -16,6 +16,7 @@ var hojas = new THREE.Mesh( forma_hojas, material_hojas);
 hojas.position.y=3.85;
 
 tronco.rotateX(Math.PI/8);
+hojas.rotateX(Math.PI/8);
 escena.add(tronco);
 escena.add(hojas);
 renderizador.render(escena,camara);
