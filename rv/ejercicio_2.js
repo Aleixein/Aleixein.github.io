@@ -1,6 +1,6 @@
 var escena = new THREE.Scene();
 var camara = new THREE.PerspectiveCamera();
-camara.position.z = 10;
+camara.position.z = 12;
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
 document.body.appendChild( renderizador.domElement );
@@ -15,7 +15,7 @@ var hojas = new THREE.Mesh( forma_hojas, material_hojas);
 
 hojas.position.y=3.85;
 
-tronco.rotateY(Math.PI/8);
+tronco.rotateY(Math.PI/4);
 escena.add(tronco);
 escena.add(hojas);
 renderizador.render(escena,camara);
