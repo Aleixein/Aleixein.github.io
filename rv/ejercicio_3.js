@@ -9,9 +9,9 @@ forma.vertices.push( new THREE.Vector3( 1, 2, -1));
 forma.vertices.push( new THREE.Vector3(-1, 2, -1));
 forma.vertices.push( new THREE.Vector3( -1, 2, 1));
 
-forma.faces.push( new THREE.Face3( 5, 4, 0) );
+forma.faces.push( new THREE.Face3( 4, 0, 5) );
 forma.faces.push( new THREE.Face3( 0, 1, 5) );
-forma.faces.push( new THREE.Face3( 7, 6, 2) );
+forma.faces.push( new THREE.Face3( 6, 2, 7) );
 forma.faces.push( new THREE.Face3( 2, 3, 7) );
 //forma.faces.push( new THREE.Face3( 2, 6, 7) );
 //forma.faces.push( new THREE.Face3( 7, 3, 2) );
