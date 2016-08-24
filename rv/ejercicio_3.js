@@ -15,7 +15,7 @@ forma.faces.push( new THREE.Face3( 5, 1, 0) );
 forma.faces.push( new THREE.Face3( 0, 4, 5) );
 forma.faces.push( new THREE.Face3( 2, 6, 7) );
 forma.faces.push( new THREE.Face3( 7, 3, 2) );
-forma.faces.push( new THREE.Face3( 2, 1, 3 );
+forma.faces.push( new THREE.Face3( 2, 1, 3) );
 forma.faces.push( new THREE.Face3( 3, 0, 1) );
 forma.faces.push( new THREE.Face3( 6, 5, 4) );
 forma.faces.push( new THREE.Face3( 4, 7, 6) );
