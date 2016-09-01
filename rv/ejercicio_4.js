@@ -1,4 +1,4 @@
-var estrella = new THREE.Shape
+var estrella = new THREE.Shape();
 
 figura.moveTo( 10, 50);
 figura.lineTo( 30, 50);
