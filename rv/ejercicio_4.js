@@ -1,22 +1,22 @@
 var estrella = new THREE.Shape();
 
-figura.moveTo( 10, 50);
-figura.lineTo( 30, 50);
-figura.lineTo( 40, 70);
-figura.lineTo( 50, 50);
-figura.lineTo( 70, 50);
-figura.lineTo( 55, 35);
-figura.lineTo( 60, 10);
-figura.lineTo( 40, 30);
-figura.lineTo( 20, 10);
-figura.lineTo( 25, 35);
-figura.lineTo( 10, 50);
+estrella.moveTo( 10, 50);
+estrella.lineTo( 30, 50);
+estrella.lineTo( 40, 70);
+estrella.lineTo( 50, 50);
+estrella.lineTo( 70, 50);
+estrella.lineTo( 55, 35);
+estrella.lineTo( 60, 10);
+estrella.lineTo( 40, 30);
+estrella.lineTo( 20, 10);
+estrella.lineTo( 25, 35);
+estrella.lineTo( 10, 50);
 
-var forma = new THREE.ShapeGeometry(estrella);
-var malla = new THREE.Mesh(forma);
+var formaEstrella = new THREE.ShapeGeometry(estrella);
+var mallaEstrella = new THREE.Mesh(formaEstrella);
 
 var escena = new THREE.Scene();
-escena.add(malla);
+escena.add(mallaEstrella);
 
 var camara = new THREE.PerspectiveCamera();
 camara.position.z = 20;
