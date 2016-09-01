@@ -1,9 +1,3 @@
-//var puntos = [];
-
-//for ( var i = 0; i < 50; i++ ){
-//  puntos.push( new THREE.Vector2( Math.sin( i*0.2 ) * 15 + 50, ( i - 5 ) * 2 ));
-//}
-
 var base1Forma = new THREE.CylinderGeometry( 7, 7, 1);
 var base2Forma = new THREE.CylinderGeometry( 6, 6, 1);
 var base3Forma = new THREE.CylinderGeometry( 4, 6, 1);
@@ -23,11 +17,11 @@ var base5Malla = new THREE.MEsh(base5Forma);
 
 var torreForma = new THREE.Geometry();
 
-torreForma.merge(base1Forma.gometry, base1Forma.matrix);
-torreForma.merge(base2Forma.gometry, base2Forma.matrix);
-torreForma.merge(base3Forma.gometry, base3Forma.matrix);
-torreForma.merge(base4Forma.gometry, base4Forma.matrix);
-torreForma.merge(base5Forma.gometry, base5Forma.matrix);
+torreForma.merge(base1Forma.geometry, base1Forma.matrix);
+torreForma.merge(base2Forma.geometry, base2Forma.matrix);
+torreForma.merge(base3Forma.geometry, base3Forma.matrix);
+torreForma.merge(base4Forma.geometry, base4Forma.matrix);
+torreForma.merge(base5Forma.geometry, base5Forma.matrix);
 
 var material = new THREE.MeshNormalMaterial();
 var torreMalla = new THREE.MEsh( torreForma, material );
