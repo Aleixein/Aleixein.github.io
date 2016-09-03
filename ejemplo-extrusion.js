@@ -6,7 +6,7 @@ diente1.lineTo( 1, 10);
 diente1.lineTo( 0, 10);
 diente1.lineTo( 0, 9 );
 
-var diente1Forma = new THREE.ExtrudeGeometry( diente1, {amount: 0.5} );
+var diente1Forma = new THREE.ExtrudeGeometry( diente1, {amount: 3} );
 
 var material = new THREE.MeshNormalMaterial();
 var malla = new THREE.Mesh( diente1Forma, material );
