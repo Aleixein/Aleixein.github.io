@@ -14,7 +14,7 @@ base3Forma.translate(0, 2, 0);
 base4Forma.translate(0, 4.5, 0);
 base5Forma.translate(0, 7, 0);
 cimaForma.translate(0, 8, 0);
-diente1Forma.translate(0, 10, 3);
+diente1Forma.translate(0, 10, 5);
 
 var base1Malla = new THREE.Mesh(base1Forma);
 var base2Malla = new THREE.Mesh(base2Forma);
