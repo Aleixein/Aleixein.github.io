@@ -4,10 +4,10 @@ var base3Forma = new THREE.CylinderGeometry( 2, 3, 1, 20);
 var base4Forma = new THREE.CylinderGeometry( 2, 2, 4, 20);
 var base5Forma = new THREE.CylinderGeometry( 3, 2, 1, 20);
 var cimaForma = new THREE.CylinderGeometry( 3, 3, 1, 20);
-var diente1Forma = new THREE.BoxGeometry( 1.75, 1.5, 1);
-var diente2Forma = new THREE.BoxGeometry( 1.75, 1.5, 1);
-var diente3Forma = new THREE.BoxGeometry( 1.5, 1.75, 1);
-var diente4Forma = new THREE.BoxGeometry( 1.5, 1.75, 1);
+var diente1Forma = new THREE.BoxGeometry( 1.5, 1, 1);
+var diente2Forma = new THREE.BoxGeometry( 1.5, 1, 1);
+var diente3Forma = new THREE.BoxGeometry( 1, 1, 1.5);
+var diente4Forma = new THREE.BoxGeometry( 1, 1, 1.5);
 
 base2Forma.translate(0, 1, 0);
 base3Forma.translate(0, 2, 0);
