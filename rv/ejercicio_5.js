@@ -13,7 +13,7 @@ var base1Malla = new THREE.Mesh(base1Forma);
 var base2Malla = new THREE.Mesh(base2Forma);
 var base3Malla = new THREE.Mesh(base3Forma);
 var base4Malla = new THREE.Mesh(base4Forma);
-var base5Malla = new THREE.MEsh(base5Forma);
+var base5Malla = new THREE.Mesh(base5Forma);
 
 var torreForma = new THREE.Geometry();
 
