@@ -4,10 +4,10 @@ var base3Forma = new THREE.CylinderGeometry( 4, 6, 1);
 var base4Forma = new THREE.CylinderGeometry( 4, 4, 4);
 var base5Forma = new THREE.CylinderGeometry( 6, 4, 1);
 
-base2Forma.translate(0.5, 1, 0);
-base3Forma.translate(0.5, 2, 0);
-base4Forma.translate(1.5, 3, 0);
-base5Forma.translate(0.5, 7, 0);
+base2Forma.translate(0, 1, 0);
+base3Forma.translate(0, 2, 0);
+base4Forma.translate(1, 3, 0);
+base5Forma.translate(0, 7, 0);
 
 var base1Malla = new THREE.Mesh(base1Forma);
 var base2Malla = new THREE.Mesh(base2Forma);
