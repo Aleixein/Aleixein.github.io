@@ -19,7 +19,7 @@ var torreForma = new THREE.Geometry();
 
 torreForma.merge(base1Malla.geometry, base1Malla.matrix);
 torreForma.merge(base2Malla.geometry, base2Malla.matrix);
-//torreForma.merge(base3Malla.geometry, base3Malla.matrix);
+torreForma.merge(base3Malla.geometry, base3Malla.matrix);
 //torreForma.merge(base4Malla.geometry, base4Malla.matrix);
 //torreForma.merge(base5Malla.geometry, base5Malla.matrix);
 
