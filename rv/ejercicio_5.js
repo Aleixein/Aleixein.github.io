@@ -1,8 +1,8 @@
-var base1Forma = new THREE.CylinderGeometry( 7, 7, 1);
-var base2Forma = new THREE.CylinderGeometry( 6, 6, 1);
-var base3Forma = new THREE.CylinderGeometry( 4, 6, 1);
-var base4Forma = new THREE.CylinderGeometry( 4, 4, 4);
-var base5Forma = new THREE.CylinderGeometry( 6, 4, 1);
+var base1Forma = new THREE.CylinderGeometry( 7, 7, 1, 20);
+var base2Forma = new THREE.CylinderGeometry( 6, 6, 1, 20);
+var base3Forma = new THREE.CylinderGeometry( 4, 6, 1, 20);
+var base4Forma = new THREE.CylinderGeometry( 4, 4, 4, 20);
+var base5Forma = new THREE.CylinderGeometry( 6, 4, 1, 20);
 
 base2Forma.translate(0, 1, 0);
 base3Forma.translate(0, 2, 0);
