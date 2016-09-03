@@ -2,8 +2,8 @@ var diente1 = new THREE.Shape();
 
 diente1.moveTo( 0, 9 );
 diente1.lineTo( 1, 9 );
-diente1.lineTo( 1, 10);
-diente1.lineTo( 0, 10);
+diente1.lineTo( 1, 11);
+diente1.lineTo( 0, 11);
 diente1.lineTo( 0, 9 );
 
 var diente1Forma = new THREE.ExtrudeGeometry( diente1, {amount: 3} );
