@@ -4,23 +4,17 @@ var base3Forma = new THREE.CylinderGeometry( 4, 6, 1, 20);
 var base4Forma = new THREE.CylinderGeometry( 4, 4, 4, 20);
 var base5Forma = new THREE.CylinderGeometry( 6, 4, 1, 20);
 var cimaForma = new THREE.CylinderGeometry( 6, 6, 1, 20);
-var diente1 = new THREE.Shape();
-diente1.moveTo( 0, 9 );
-diente1.lineTo( 1, 9 );
-diente1.lineTo( 1, 10);
-diente1.lineTo( 0, 10);
-diente1.lineTo( 0, 9 );
-var diente2 = new THREE.Shape();
-var diente3 = new THREE.Shape();
-var diente4 = new THREE.Shape();
-var diente1Forma = new THREE.ExtrudeGeometry( diente1, {amount: 0.5} );
+var diente1Forma = new THREE.BoxGeometry( 1, 2, 0.75);
+var diente2Forma = new THREE.BoxGeometry( 1, 2, 0.75);
+var diente3Forma = new THREE.BoxGeometry( 1, 2, 0.75);
+var diente4Forma = new THREE.BoxGeometry( 1, 2, 0.75);
 
 base2Forma.translate(0, 1, 0);
 base3Forma.translate(0, 2, 0);
 base4Forma.translate(0, 4.5, 0);
 base5Forma.translate(0, 7, 0);
 cimaForma.translate(0, 8, 0);
-//diente1Forma.translate(0, 0, -2);
+diente1Forma.translate(0, 10, -2.5);
 
 var base1Malla = new THREE.Mesh(base1Forma);
 var base2Malla = new THREE.Mesh(base2Forma);
