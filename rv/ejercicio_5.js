@@ -14,10 +14,10 @@ base3Forma.translate(0, 2, 0);
 base4Forma.translate(0, 4.5, 0);
 base5Forma.translate(0, 7, 0);
 cimaForma.translate(0, 8, 0);
-diente1Forma.translate( 0, 9.5, 2.5);
-diente2Forma.translate(0, 9.5, -2.5);
-diente3Forma.translate( 2.5, 9.5, 0);
-diente4Forma.translate(-2.5, 9.5, 0);
+diente1Forma.translate( 0, 9, 2.5);
+diente2Forma.translate(0, 9, -2.5);
+diente3Forma.translate( 2.5, 9, 0);
+diente4Forma.translate(-2.5, 9, 0);
 
 var base1Malla = new THREE.Mesh(base1Forma);
 var base2Malla = new THREE.Mesh(base2Forma);
