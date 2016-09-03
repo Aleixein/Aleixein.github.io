@@ -13,7 +13,7 @@ diente1.lineTo( -0.5, 9);
 var diente2 = new THREE.Shape();
 var diente3 = new THREE.Shape();
 var diente4 = new THREE.Shape();
-var diente1Forma = new THREE.ExtrudeGeometry( diente1, {amount: 0.5} );
+var diente1Forma = new THREE.ExtrudeGeometry( diente1, {amount: 1} );
 
 base2Forma.translate(0, 1, 0);
 base3Forma.translate(0, 2, 0);
