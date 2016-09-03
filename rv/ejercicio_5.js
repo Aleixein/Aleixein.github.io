@@ -17,11 +17,11 @@ var base5Malla = new THREE.MEsh(base5Forma);
 
 var torreForma = new THREE.Geometry();
 
-torreForma.merge(base1Forma.geometry, base1Forma.matrix);
-torreForma.merge(base2Forma.geometry, base2Forma.matrix);
-torreForma.merge(base3Forma.geometry, base3Forma.matrix);
-torreForma.merge(base4Forma.geometry, base4Forma.matrix);
-torreForma.merge(base5Forma.geometry, base5Forma.matrix);
+torreForma.merge(base1Malla.geometry, base1Malla.matrix);
+torreForma.merge(base2Malla.geometry, base2Malla.matrix);
+torreForma.merge(base3Malla.geometry, base3Malla.matrix);
+torreForma.merge(base4Malla.geometry, base4Malla.matrix);
+torreForma.merge(base5Malla.geometry, base5Malla.matrix);
 
 var material = new THREE.MeshNormalMaterial();
 var torreMalla = new THREE.MEsh( torreForma, material );
