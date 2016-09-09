@@ -1,4 +1,4 @@
-car camara = new THREE.PerspectiveCamera();
+var camara = new THREE.PerspectiveCamera();
 
 var cuboForma = new THREE.BoxGeometry(10,10,10)
 var colorGris = new THREE.MeshBasicMaterial({color: 0xcfcfcf});
