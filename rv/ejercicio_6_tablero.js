@@ -9,10 +9,10 @@ var cuadros=[];
 for (var i = 0; i < 8; i++ ) {
   for ( var j = 0; j < 8; j++ ) {
     if ( (i+j) % 2 == 0){
-      cuadros.push ( new THREE.Mesh( cuboForma,colorBlanco ) );
+      cuadros.push ( var cuboMalla = new THREE.Mesh( cuboForma,colorBlanco ) );
     }
     else{
-      cuadros.push ( new THREE.Mesh( cuboForma,colorGris ) );
+      cuadros.push ( var cuboMalla = new THREE.Mesh( cuboForma,colorGris ) );
     }
       cuboMalla.position.x = i*10;
       cuboMalla.position.z = j*10;
