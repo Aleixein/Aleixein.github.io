@@ -14,7 +14,6 @@ for (var i = 0; i < 8; i++ ) {
     }
       position.cuboMalla.x = i*10;
       position.cuboMalla.z = j*10;
-    }
   }
 }
 
