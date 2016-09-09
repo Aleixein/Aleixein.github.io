@@ -12,8 +12,8 @@ for (var i = 0; i < 8; i++ ) {
     else{
       var cuboMalla = new THREE.Mesh( cuboForma,colorGris );
     }
-      position.cuboMalla.x = i*10;
-      position.cuboMalla.z = j*10;
+      cuboMalla.position.x = i*10;
+      cuboMalla.position.z = j*10;
   }
 }
 
