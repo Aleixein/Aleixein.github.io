@@ -10,19 +10,22 @@ var cuadros = new THREE.Object3D();
 for (var i = 0; i < 8; i++ ) {
   for ( var j = 0; j < 8; j++ ) {
     if ( (i+j) % 2 == 0){
-      cuadros.add ( new THREE.Mesh( cuboForma,colorBlanco ) );
+      var item = new THREE.Mesh( cuboForma,colorBlanco );
     }
     else{
-      cuadros.add ( new THREE.Mesh( cuboForma,colorGris ) );
+      var item = new THREE.Mesh( cuboForma,colorGris );
     }
-    var cuboMalla = new THREE.Mesh(cuadros);
-      cuboMalla.position.x = i*10;
-      cuboMalla.position.z = j*10;
+    item.position.x = i*10;
+    item.position.z = j*10;
+        //var cuboMalla = new THREE.Mesh(cuadros);
+      //cuboMalla.position.x = i*10;
+      //cuboMalla.position.z = j*10;
+    cuadros.add(item);
   }
 }
 
 var escena = new THREE.Scene();
-escena.add(cuboMalla);
+escena.add(cuadros);
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderizador.domElement );
