@@ -5,6 +5,8 @@ var cuboForma = new THREE.BoxGeometry(10,10,10)
 var colorGris = new THREE.MeshBasicMaterial({color: 0x676767});
 var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
 
+//var tableroForma = new THREE.Geometry();
+
 var cuadros = new THREE.Object3D();
 
 for (var i = 0; i < 8; i++ ) {
@@ -17,14 +19,11 @@ for (var i = 0; i < 8; i++ ) {
     }
     item.position.x = i*10;
     item.position.z = j*10;
-        //var cuboMalla = new THREE.Mesh(cuadros);
-      //cuboMalla.position.x = i*10;
-      //cuboMalla.position.z = j*10;
     cuadros.add(item);
   }
 }
 
-cuadros.rotateX(Math.PI/2);
+cuadros.rotateX(Math.PI);
 var escena = new THREE.Scene();
 escena.add(cuadros);
 var renderizador = new THREE.WebGLRenderer();
