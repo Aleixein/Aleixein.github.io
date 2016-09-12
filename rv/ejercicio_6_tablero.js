@@ -2,7 +2,7 @@ var camara = new THREE.PerspectiveCamera();
 camara.position.z = 200;
 
 var cuboForma = new THREE.BoxGeometry(10,10,10)
-var colorGris = new THREE.MeshBasicMaterial({color: 0xcfcfcf});
+var colorGris = new THREE.MeshBasicMaterial({color: 0xcfcfcf, wireframe: true});
 var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
 
 var cuadros = new THREE.Object3D();
