@@ -24,6 +24,7 @@ for (var i = 0; i < 8; i++ ) {
   }
 }
 
+cuadros.rotateX(Math.PI/2);
 var escena = new THREE.Scene();
 escena.add(cuadros);
 var renderizador = new THREE.WebGLRenderer();
