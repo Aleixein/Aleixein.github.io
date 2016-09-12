@@ -4,7 +4,7 @@ var cuboForma = new THREE.BoxGeometry(10,10,10)
 var colorGris = new THREE.MeshBasicMaterial({color: 0xcfcfcf});
 var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
 
-var cuadros = new Object3D;
+var cuadros = new Object3D();
 
 for (var i = 0; i < 8; i++ ) {
   for ( var j = 0; j < 8; j++ ) {
