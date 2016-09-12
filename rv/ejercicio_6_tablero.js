@@ -1,4 +1,5 @@
 var camara = new THREE.PerspectiveCamera();
+camara.position.z = 200;
 
 var cuboForma = new THREE.BoxGeometry(10,10,10)
 var colorGris = new THREE.MeshBasicMaterial({color: 0xcfcfcf});
@@ -21,6 +22,7 @@ for (var i = 0; i < 8; i++ ) {
 }
 
 var escena = new THREE.Scene();
+escena.add(cuboMalla);
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderizador.domElement );
