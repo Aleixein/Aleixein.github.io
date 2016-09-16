@@ -50,10 +50,10 @@ torreForma.merge(diente4Malla.geometry, diente4Malla.matrix);
 for ( var i = 0; i < 2; i++){
   for (var j = 0; j < 2; j++){
     if ((i+j) % 2 == 0) {
-      var item = new THREE.Mesh(torreForma, colorBlanco);
+      var item = new THREE.Mesh(torreForma, colorGris);
     }
     else{
-      var item = new THREE.Mesh(torreForma, colorGris);
+      var item = new THREE.Mesh(torreForma, colorBlanco);
     }
     item.position.x = i*70;
     item.position.z = j*70;
