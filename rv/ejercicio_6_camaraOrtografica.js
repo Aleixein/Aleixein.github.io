@@ -10,8 +10,9 @@ camara.updateProjectionMatrix();
 
 camara.position.z = 150;
 camara.position.y = 25;
-camara.lookAt(scene.position);
+
 var escena = new THREE.Scene();
+camara.lookAt(scene.position);
 escena.add(marcoMalla);
 escena.add(cuadros);
 escena.add(torres);
