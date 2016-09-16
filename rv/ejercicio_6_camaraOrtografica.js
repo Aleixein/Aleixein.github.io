@@ -5,11 +5,11 @@ camara.right = window.innerWidth/6;
 camara.top = window.innerHeight/8;
 camara.bottom = window.innerHeight/-8;
 camara.near = 0.1;
-camara.far = 300;
+camara.far = 200;
 camara.updateProjectionMatrix();
 
-camara.position.z = 150;
-camara.position.y = 25;
+camara.position.z = 120;
+camara.position.y = 35;
 
 var escena = new THREE.Scene();
 camara.lookAt(escena.position);
