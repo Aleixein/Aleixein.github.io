@@ -1,4 +1,6 @@
 var torres = new THREE.Object3D();
+var colorGris = new THREE.MeshBasicMaterial({color: 0x676767});
+var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
 
 var base1Forma = new THREE.CylinderGeometry( 3.5, 3.5, 1, 20);
 var base2Forma = new THREE.CylinderGeometry( 3, 3, 1, 20);
@@ -61,5 +63,3 @@ for ( var i = 0; i < 2; i++){
     torres.add(item);
   }
 }
-
-escena.add(torres);
