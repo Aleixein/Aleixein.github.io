@@ -5,9 +5,9 @@ var planoLejano = 600;
 
 var camara = new THREE.PerspectiveCamera( campoVision, relacionAspecto, planoCercano, planoLejano );
 
-camara.position.x = 35;
-camara.position.z = 160;
-camara.position.y = 30;
+camara.position.x = 100;
+camara.position.z = 100;
+camara.position.y = 100;
 
 var escena = new THREE.Scene();
 escena.add(marcoMalla);
