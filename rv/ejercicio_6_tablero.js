@@ -39,5 +39,5 @@ marcoForma.merge( derMalla.geometry, derMalla.matrix );
 marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
 marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
 
-var marcoMaterial = new THREE.MeshBasicMaterial( {color: 0x895D05 });
+var marcoMaterial = new THREE.MeshBasicMaterial( {color: 0x674808 });
 var marcoMalla = new THREE.Mesh( marcoForma, marcoMaterial );
