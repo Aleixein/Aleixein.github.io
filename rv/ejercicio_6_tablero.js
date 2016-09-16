@@ -22,10 +22,10 @@ var izqForma = new THREE.BoxGeometry(10,10,100);
 var derForma = new THREE.BoxGeometry(10,10,100);
 var abajoForma = new THREE.BoxGeometry(80,10,10);
 var arribaForma = new THREE.BoxGeometry(80,10,10);
-izq.translate(-10,0,35);
-der.translate(80,0,35);
-abajo.translate(35,0,80);
-arriba.translate(35,0,-10);
+izqForma.translate(-10,0,35);
+derForma.translate(80,0,35);
+abajoForma.translate(35,0,80);
+arribaForma.translate(35,0,-10);
 
 var izqMalla = new THREE.Mesh(izqForma);
 var derMalla = new THREE.Mesh(derForma);
