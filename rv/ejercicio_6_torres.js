@@ -58,6 +58,8 @@ for ( var i = 0; i < 2; i++){
     item.position.x = i*70;
     item.position.z = j*70;
     item.position.y = 5;
+    aristas1 = new THREE.EdgesHelper(item,0x474a4a);
+    aristas1.material.lineWidth=0.3;
     torres.add(item);
   }
 }
