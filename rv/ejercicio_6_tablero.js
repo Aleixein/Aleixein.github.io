@@ -30,7 +30,7 @@ arribaForma.translate(35,0,-10);
 var izqMalla = new THREE.Mesh(izqForma);
 var derMalla = new THREE.Mesh(derForma);
 var abajoMalla = new THREE.Mesh(abajoForma);
-var arribaMalla = new THREE.Mesh(arribaMalla);
+var arribaMalla = new THREE.Mesh(arribaForma);
 
 var marcoForma = new THREE.Geometry();
 
@@ -39,5 +39,5 @@ marcoForma.merge( derMalla.geometry, derMalla.matrix );
 marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
 marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
 
-var marcoMaterial = new THREE.MeshBasicMaterial( {color: '#895D05' });
+var marcoMaterial = new THREE.MeshBasicMaterial( {color: 0x895D05 });
 var marcoMalla = new THREE.Mesh( marcoForma, marcoMaterial );
