@@ -8,7 +8,7 @@ camara.near = 0.1;
 camara.far = 300;
 camara.updateProjectionMatrix();
 
-camara.position.x = 35;
+//camara.position.x = 35;
 camara.position.z = 130;
 camara.position.y = 30;
 
