@@ -10,9 +10,11 @@ camara.position.z = 160;
 camara.position.y = 30;
 
 var escena = new THREE.Scene();
+camara.lookAt(escena.position);
 escena.add(marcoMalla);
 escena.add(cuadros);
 escena.add(torres);
+escena.add(aristas);
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderizador.domElement );
