@@ -1,7 +1,7 @@
 var camara = new THREE.OrthographicCamera();
 
-camara.left = window.innerWidth/-16;
-camara.right = window.innerWidth/16;
+camara.left = window.innerWidth/-12;
+camara.right = window.innerWidth/12;
 camara.top = window.innerHeight/16;
 camara.bottom = window.innerHeight/-16;
 camara.near = 0.1;
