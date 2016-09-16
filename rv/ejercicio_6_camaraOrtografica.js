@@ -1,16 +1,16 @@
 var camara = new THREE.OrthographicCamera();
 
-camara.left = -20;
-camara.right = 90;
+camara.left = window.innerWidth/-2;
+camara.right = window.innerWidth/2;
 camara.top = window.innerHeight/2;
 camara.bottom = window.innerHeight/-2;
 camara.near = 0.1;
 camara.far = 600;
 camara.updateProjectionMatrix();
 
-camara.position.x = 35;
+//camara.position.x = 35;
 camara.position.z = 160;
-camara.position.y = 30;
+//camara.position.y = 30;
 
 var escena = new THREE.Scene();
 escena.add(marcoMalla);
