@@ -1,4 +1,4 @@
-var cuboForma = new THREE.BoxGeometry(10,10,10)
+var cuboForma = new THREE.BoxGeometry(10,10,10);
 
 //var tableroForma = new THREE.Geometry();
 
@@ -30,7 +30,7 @@ arribaForma.translate(35,0,-10);
 var izqMalla = new THREE.Mesh(izqForma);
 var derMalla = new THREE.Mesh(derForma);
 var abajoMalla = new THREE.Mesh(abajoForma);
-var arribaMalla = new THRE.Mesh(arribaMalla);
+var arribaMalla = new THREE.Mesh(arribaMalla);
 
 var marcoForma = new THREE.Geometry();
 
