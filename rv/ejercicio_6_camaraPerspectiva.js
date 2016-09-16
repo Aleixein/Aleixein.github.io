@@ -10,6 +10,7 @@ camara.position.z = 160;
 camara.position.y = 30;
 
 var escena = new THREE.Scene();
+escena.add(marcoMalla);
 escena.add(cuadros);
 escena.add(torres);
 var renderizador = new THREE.WebGLRenderer();
