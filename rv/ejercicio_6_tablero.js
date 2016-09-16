@@ -41,3 +41,6 @@ marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
 
 var marcoMaterial = new THREE.MeshBasicMaterial( {color: 0x674808 });
 var marcoMalla = new THREE.Mesh( marcoForma, marcoMaterial );
+
+var aristas = new THREE.EdgesHelper( marcoMalla, 0x474a4a );
+aristas.material.linewidth = 0.3;
