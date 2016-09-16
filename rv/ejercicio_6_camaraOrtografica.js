@@ -13,9 +13,15 @@ camara.position.y = 35;
 
 var escena = new THREE.Scene();
 
-var aristas = new THREE.EdgesHelper( mesh, 0x474a4a );
-aristas.material.linewidth = 0.5;
+var aristas = new THREE.EdgesHelper( marcoMalla, 0x474a4a );
+var aristas2 = new THREE.EdgesHelper( cuadros, 0x474a4a );
+var aristas3 = new THREE.EdgesHelper( torres, 0x474a4a );
+aristas.material.linewidth = 0.3;
+aristas2.material.linewidth = 0.3;
+aristas3.material.linewidth = 0.3;
 escena.add( aristas );
+escena.add( aristas2 );
+escena.add( aristas3 );
 
 camara.lookAt(escena.position);
 escena.add(marcoMalla);
