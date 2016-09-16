@@ -9,7 +9,7 @@ camara.far = 300;
 camara.updateProjectionMatrix();
 
 camara.position.z = 130;
-camara.position.y = 30;
+camara.position.y = 100;
 
 var escena = new THREE.Scene();
 escena.add(marcoMalla);
