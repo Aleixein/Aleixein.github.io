@@ -2,8 +2,6 @@ var camara = new THREE.PerspectiveCamera();
 camara.position.z = 200;
 
 var cuboForma = new THREE.BoxGeometry(10,10,10)
-var colorGris = new THREE.MeshBasicMaterial({color: 0x676767});
-var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
 
 //var tableroForma = new THREE.Geometry();
 
@@ -25,6 +23,7 @@ for (var i = 0; i < 8; i++ ) {
 
 var escena = new THREE.Scene();
 escena.add(cuadros);
+escena.add(torres);
 var renderizador = new THREE.WebGLRenderer();
 renderizador.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderizador.domElement );
