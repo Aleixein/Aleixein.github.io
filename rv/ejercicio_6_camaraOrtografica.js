@@ -8,8 +8,9 @@ camara.near = 0.1;
 camara.far = 200;
 camara.updateProjectionMatrix();
 
-camara.position.z = 120;
-camara.position.y = 35;
+camara.position.x = 100;
+camara.position.z = 100;
+camara.position.y = 100;
 
 var escena = new THREE.Scene();
 camara.lookAt(escena.position);
