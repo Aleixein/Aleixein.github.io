@@ -3,7 +3,7 @@ var camara = new THREE.OrthographicCamera();
 camara.left = -20;
 camara.right = 90;
 camara.top = window.innerHeight/2;
-camara.bottom = window.innerHeight/2;
+camara.bottom = window.innerHeight/-2;
 camara.near = 0.1;
 camara.far = 600;
 camara.updateProjectionMatrix();
