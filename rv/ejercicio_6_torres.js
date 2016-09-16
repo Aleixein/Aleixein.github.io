@@ -53,7 +53,7 @@ for ( var i = 0; i < 2; i++){
       var item = new THREE.Mesh(torreForma, colorBlanco);
     }
     else{
-      var item = new THRE.Mesh(torreForma, colorGris);
+      var item = new THREE.Mesh(torreForma, colorGris);
     }
     item.position.x = i*70;
     item.position.z = j*70;
