@@ -47,8 +47,6 @@ torreForma.merge(diente2Malla.geometry, diente2Malla.matrix);
 torreForma.merge(diente3Malla.geometry, diente3Malla.matrix);
 torreForma.merge(diente4Malla.geometry, diente4Malla.matrix);
 
-var torreMalla = new THREE.Mesh( torreForma, material );
-
 for ( var i = 0; i < 2; i++){
   for (var j = 0; j < 2; j++){
     if ((i+j) % 2 == 0) {
