@@ -1,9 +1,9 @@
-var campoVision = 60; //en grados
-var relacionAspecto = window.innerWidth/window.innerHeight;
-var planoCercano = 1;
-var planoLejano = 600;
-
-var camara = new THREE.PerspectiveCamera( campoVision, relacionAspecto, planoCercano, planoLejano );
+//var campoVision = 60; //en grados
+//var relacionAspecto = window.innerWidth/window.innerHeight;
+//var planoCercano = 1;
+//var planoLejano = 600;
+var camara = new THREE.PerspectiveCamera();
+//var camara = new THREE.PerspectiveCamera( campoVision, relacionAspecto, planoCercano, planoLejano );
 
 camara.position.x = 35;
 camara.position.z = 150;
