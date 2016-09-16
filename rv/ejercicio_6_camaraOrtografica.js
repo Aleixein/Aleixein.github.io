@@ -12,7 +12,7 @@ camara.position.z = 150;
 camara.position.y = 25;
 
 var escena = new THREE.Scene();
-camara.lookAt(scene.position);
+camara.lookAt(escena.position);
 escena.add(marcoMalla);
 escena.add(cuadros);
 escena.add(torres);
