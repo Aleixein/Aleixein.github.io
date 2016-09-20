@@ -2,7 +2,7 @@
 var escena = new THREE.Scene();
 escena.add(marcoMalla);
 escena.add(cuadros);
-escena.add(torres);
+//escena.add(torres);
 
 var campoVision = 55; //en grados
 var relacionAspecto = window.innerWidth/window.innerHeight;
