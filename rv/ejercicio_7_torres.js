@@ -1,9 +1,9 @@
 var torres = new THREE.Object3D();
 
-var transparencia100 = new THREE.LambertMaterial( { color: "#ffffff", transparent: true, opacity = 1 } );
-var transparencia75 = new THREE.LambertMaterial( { color: "#ffffff", transparent: true, opacity = 0.75 } );
-var transparencia50 = new THREE.LambertMaterial( { color: "#ffffff", transparent: true, opacity = 0.5 } );
-var transparencia25 = new THREE.LambertMaterial( { color: "#ffffff", transparent: true, opacity = 0.25 } );
+var transparencia100 = new THREE.MeshLambertMaterial( { color: "#ffffff", transparent: true, opacity = 1 } );
+var transparencia75 = new THREE.MeshLambertMaterial( { color: "#ffffff", transparent: true, opacity = 0.75 } );
+var transparencia50 = new THREE.MeshLambertMaterial( { color: "#ffffff", transparent: true, opacity = 0.5 } );
+var transparencia25 = new THREE.MeshLambertMaterial( { color: "#ffffff", transparent: true, opacity = 0.25 } );
 
 var base1Forma = new THREE.CylinderGeometry( 3.5, 3.5, 1, 20);
 var base2Forma = new THREE.CylinderGeometry( 3, 3, 1, 20);
