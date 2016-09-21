@@ -15,7 +15,7 @@ escena.add(cuadros);
 escena.add(torres);
 escena.add(luzMagenta);
 escena.add(luzCyan);
-escena.add(luzAmarila);
+escena.add(luzAmarilla);
 
 var campoVision = 55; //en grados
 var relacionAspecto = window.innerWidth/window.innerHeight;
