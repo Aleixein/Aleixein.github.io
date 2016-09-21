@@ -5,9 +5,9 @@ luzMagenta.position.x = 35;
 luzMagenta.position.y = 50;
 luzMagenta.position.z = 35;
 luzCyan.position.y = 50;
-luzAmarilla.position.x = 90;
-luzAmarilla.position.y = 50;
-luzAmarilla.position.z = 90;
+luzAmarilla.position.x = 85;
+luzAmarilla.position.y = 10;
+luzAmarilla.position.z = 85;
 
 var escena = new THREE.Scene();
 escena.add(marcoMalla);
