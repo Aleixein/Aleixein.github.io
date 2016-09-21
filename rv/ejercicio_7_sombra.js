@@ -13,6 +13,9 @@ var escena = new THREE.Scene();
 escena.add(marcoMalla);
 escena.add(cuadros);
 escena.add(torres);
+escena.add(luzMagenta);
+escena.add(luzCyan);
+escena.add(luzAmarila);
 
 var campoVision = 55; //en grados
 var relacionAspecto = window.innerWidth/window.innerHeight;
@@ -25,12 +28,17 @@ camara.position.x = 100;
 camara.position.y = 100;
 camara.position.z = 100;
 
-//camara.lookAt(escena.position);
+camara.lookAt(escena.position);
 
-var renderizador = new THREE.WebGLRenderer();
+var renderizador = new THREE.WebGLRenderer( {antialias: true } );
 renderizador.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderizador.domElement);
 renderizador.shadowMapEnabled = true;
+torres.castShadow = true;
+cuadros.receiveShadow = true;
+marcoMalla.receiveShadow = true;
+luzMagenta.castShadow = true;
+luzCyan.castShadow = true;
+luzAmarilla.castShadow = true;
 
-renderizador.render(escena,camara);
-
+renderizador.render( escena,camara );
