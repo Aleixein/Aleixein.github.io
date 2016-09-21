@@ -1,6 +1,6 @@
 var cuboForma = new THREE.BoxGeometry(10,10,10);
-var colorGris = new THREE.MeshBasicMaterial({color: 0x676767});
-var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
+var colorGris = new THREE.MeshLambertMaterial({color: 0x676767});
+var colorBlanco = new THREE.MeshLambertMaterial({color: 0xffffff});
 
 var cuadros = new THREE.Object3D();
 
@@ -39,5 +39,5 @@ marcoForma.merge( derMalla.geometry, derMalla.matrix );
 marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
 marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
 
-var marcoMaterial = new THREE.MeshBasicMaterial( {color: 0x674808 });
+var marcoMaterial = new THREE.MeshLambertMaterial( {color: 0x674808 });
 var marcoMalla = new THREE.Mesh( marcoForma, marcoMaterial );
