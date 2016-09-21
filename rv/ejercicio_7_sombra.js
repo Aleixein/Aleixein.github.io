@@ -2,11 +2,11 @@ var luzMagenta = new THREE.PointLight(0xFF00FF);
 var luzCyan = new THREE.PointLight(0x00FFFF);
 var luzAmarilla = new THREE.PointLight(0xFFFF00);
 luzMagenta.position.x = 35;
-luzMagenta.position.y = 20;
+luzMagenta.position.y = 50;
 luzMagenta.position.z = 35;
-luzCyan.position.y = 25;
+luzCyan.position.y = 50;
 luzAmarilla.position.x = 90;
-luzAmarilla.position.y = 22;
+luzAmarilla.position.y = 50;
 luzAmarilla.position.z = 90;
 
 var escena = new THREE.Scene();
