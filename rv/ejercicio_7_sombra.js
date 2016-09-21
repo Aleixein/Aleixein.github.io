@@ -25,8 +25,8 @@ var planoLejano = 600;
 var camara = new THREE.PerspectiveCamera( campoVision, relacionAspecto, planoCercano, planoLejano );
 
 camara.position.x = 100;
-camara.position.y = 85;
-camara.position.z = 100;
+camara.position.y = 100;
+camara.position.z = 160;
 
 camara.lookAt(escena.position);
 
