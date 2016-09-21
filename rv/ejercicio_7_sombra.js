@@ -28,7 +28,7 @@ camara.position.x = 100;
 camara.position.y = 100;
 camara.position.z = 100;
 
-camara.lookAt(escena.position);
+//camara.lookAt(escena.position);
 
 var renderizador = new THREE.WebGLRenderer( {antialias: true } );
 renderizador.setSize(window.innerWidth, window.innerHeight);
