@@ -1,6 +1,6 @@
-var luzMagenta = new THREE.PointLight(0xFF00FF);
-var luzCyan = new THREE.PointLight(0x00FFFF);
-var luzAmarilla = new THREE.PointLight(0xFFFF00);
+var luzMagenta = new THREE.PointLight(0xFFFFFF); //FF00FF
+var luzCyan = new THREE.PointLight(0xFFFFFF);    //00FFFF
+var luzAmarilla = new THREE.PointLight(0xFFFFFF);//FFFF00
 luzMagenta.position.x = 35;
 luzMagenta.position.y = 30;
 luzMagenta.position.z = 35;
