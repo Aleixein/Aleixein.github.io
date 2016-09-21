@@ -1,4 +1,6 @@
 var cuboForma = new THREE.BoxGeometry(10,10,10);
+var colorGris = new THREE.MeshBasicMaterial({color: 0x676767});
+var colorBlanco = new THREE.MeshBasicMaterial({color: 0xffffff});
 
 var cuadros = new THREE.Object3D();
 
