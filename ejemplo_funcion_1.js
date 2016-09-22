@@ -10,8 +10,9 @@ function init( p ) {
   renderizador = new THREE.WebGLRenderer();
   renderizador.setSize(700,700);
   document.body.appendChild( renderizador.domElement );
-} //escena, camara y renderizador no tienen var porque son variables globales, se definen despues pero antes de
-  //la ejecución de las funciones
+} 
+//escena, camara y renderizador no tienen var porque son variables globales, 
+//se definen despues pero antes de la ejecución de las funciones
 
 var main = function(p){
   renderizador.render(escena,camara);
