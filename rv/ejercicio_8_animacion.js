@@ -6,7 +6,8 @@ function init(p){
   escena.add(malla);
   
   camara = new THREE.PerspectiveCamera();
-  camara.position.z = 5;
+  camara.position.z = 5*p;
+  step=0.1;
   
   renderizador = new THREE.WebGLRenderer();
   renderizador.setSize(700,700);
@@ -16,12 +17,10 @@ function init(p){
 var loop = function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
-  if (x<5){
-    malla.position.x+=0.01;
+  if(Math.abs(malla.position.x)<5){
+    step=-step;
   }
-  else if (x>0){
-    malla.position.x-=0.01;
-  }
+  malla.position.x+=step;
 }
 
 var escena,camara,renderizador,malla;
