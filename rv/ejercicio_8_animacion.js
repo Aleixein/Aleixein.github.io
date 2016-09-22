@@ -22,6 +22,7 @@ var loop = function(){
   }
   malla.position.x+=step;
   malla.position.y+=step;
+  malla.rotateZ(step);
 }
 
 var escena,camara,renderizador,malla;
