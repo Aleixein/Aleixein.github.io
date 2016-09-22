@@ -16,7 +16,7 @@ function init( p ) {
 //se definen despues pero antes de la ejecución de las funciones
 
 var main = function(p){
-  p(1);
+  p=1;
   renderizador.render(escena,camara);
 }
 
