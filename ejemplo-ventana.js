@@ -1,7 +1,34 @@
-VENTANA.escena = new THREE.Scene();
-VENTANA.camara = new THREE.PerspectiveCamera(75,window.innerwidth/window.innerHeight,0.1,1000);
+var VENTANA = new Object();
+VENTANA.listener = function(){
+  VENTANA.camara.aspect = window.innerWidth/window.innerHeight;
+  VENTANA.camara.updateProjectionMatrix();
+  VENTANA.renderizador.setSize(window.innerWidth, window.innerHeight);
+}
 
-VENTANA.camara.position.z = 5;
+VENTANA.setup = function(){
+  var tipo-evento = 'resize';
+  var capturarp = false;
+  window.addEventListener( tipo-evento, VENTANA.listener, capturarp;
+  
+  VENTANA.escena = new THREE.Scene();
+  VENTANA.camara = new THREE.PerspectiveCamera(75,window.innerwidth/window.innerHeight,0.1,1000);
 
-var lienzo = document.getElementById("ejemeplo-ventana");
-VENTANA.renderizador = new THREE.WebGLRenderer({canvas: lienzo, antializas: true});
+  VENTANA.camara.position.z = 5;
+
+  var lienzo = document.getElementById("ejemplo-ventana");
+  VENTANA.renderizador = new THREE.WebGLRenderer({canvas: lienzo, antialias: true});
+  VENTANA.renderizador.setSize( window.innerWidth, window.innerHeight);
+
+  VENTANA.malla = new THREE.Mesh( new THREE.BoxGeometry(1,1,1), new THREE.MeshNormalMaterial() );
+  VENTANA.escena.add(VENTANA.malla);
+}
+
+VENTANA.loop= function() {
+  requestAnimationFrame( VENTANA.loop );
+  VENTANA.malla.rotateX( 0.01 );
+  VENTANA.malla.rotateY( 0.01 );
+  VENTANA.renderizador.render( VENTANA.escena, VENTANA.camara );
+}
+
+VENTANA.setup();
+VENTANA.loop();
