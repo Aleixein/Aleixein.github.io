@@ -10,8 +10,7 @@ TEXTURA.setup = function(){
   TEXTURA.escena = new THREE.Scene();
   
   var cargador = new THREE.TextureLoader();
-  cargador.load("textura.jpg",
-                 TEXTURA.retrollamada);
+  cargador.load("textura.jpg", TEXTURA.retrollamada);
   
   TEXTURA.camara = new THREE.PerspectiveCamera( 75, window.innerWidth/Window.innerHeight, 0.1, 1000 );
   
