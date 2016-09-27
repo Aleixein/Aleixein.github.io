@@ -6,9 +6,9 @@ VENTANA.listener = function(){
 }
 
 VENTANA.setup = function(){
-  var tipo-evento = 'resize';
+  var tipo_evento = 'resize';
   var capturarp = false;
-  window.addEventListener( tipo-evento, VENTANA.listener, capturarp );
+  window.addEventListener( tipo_evento, VENTANA.listener, capturarp );
   
   VENTANA.escena = new THREE.Scene();
   VENTANA.camara = new THREE.PerspectiveCamera(75,window.innerwidth/window.innerHeight,0.1,1000);
