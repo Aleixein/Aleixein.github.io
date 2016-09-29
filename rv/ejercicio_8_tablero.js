@@ -61,5 +61,5 @@ TEXTURA.base = function(){
   marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
   marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
   
-  var TEXTURA.marcoMalla = new THREE.Mesh( marcoForma, baseMadera );
+  TEXTURA.marcoMalla = new THREE.Mesh( marcoForma, baseMadera );
 }
