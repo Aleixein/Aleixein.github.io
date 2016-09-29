@@ -19,7 +19,7 @@ TEXTURA.cargadorNegro.load("marmol_negro.jpg",TEXTURA.negro);
   
 TEXTURA.tablero = function(){
   
-  var TEXTURA.cuadros = new THREE.Object3D();
+  TEXTURA.cuadros = new THREE.Object3D();
 
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
