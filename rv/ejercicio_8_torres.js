@@ -1,5 +1,5 @@
 TEXTURA.rooks = function(){ 
-  var TEXTURA.torres = new THREE.Object3D();
+  TEXTURA.torres = new THREE.Object3D();
 
   var base1Forma = new THREE.CylinderGeometry( 3.5, 3.5, 1, 20);
   var base2Forma = new THREE.CylinderGeometry( 3, 3, 1, 20);
