@@ -12,14 +12,16 @@ TEXTURA.madera = function( textura) {
   var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
-var cargadorBlanco = new THREE.TextureLoader();
-var cargadorNegro = new THREE.TextureLoader();
-cargadorBlanco.load("marmol_blanco.jpg",TEXTURA.blanco);
-cargadorNegro.load("marmol_negro.jpg",TEXTURA.negro);
+var cargadorBlanco, cargadorNegro;
   
 TEXTURA.tablero = function(){
   var cuboForma = new THREE.BoxGeometry(10,10,10);
   TEXTURA.cuadros = new THREE.Object3D();
+  
+  cargadorBlanco = new THREE.TextureLoader();
+  cargadorNegro = new THREE.TextureLoader();
+  cargadorBlanco.load("marmol_blanco.jpg",TEXTURA.blanco);
+  cargadorNegro.load("marmol_negro.jpg",TEXTURA.negro);
 
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
