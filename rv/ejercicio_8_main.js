@@ -3,6 +3,7 @@ TEXTURA.setup = function(){
   
   TEXTURA.escena = new THREE.Scene();
   TEXTURA.tablero();
+  TEXTURA.base();
   TEXTURA.rooks();
   TEXTURA.escena.add(TEXTURA.marcoMalla);
   TEXTURA.escena.add(TEXTURA.cuadros);
