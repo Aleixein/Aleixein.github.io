@@ -12,8 +12,8 @@ TEXTURA.madera = function( textura) {
   var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
-var TEXTURA.cargadorBlanco = new THREE.TextureLoader();
-var TEXTURA.cargadorNegro = new THREE.TextureLoader();
+TEXTURA.cargadorBlanco = new THREE.TextureLoader();
+TEXTURA.cargadorNegro = new THREE.TextureLoader();
 TEXTURA.cargadorBlanco.load("marmol_blanco.jpg",TEXTURA.blanco);
 TEXTURA.cargadorNegro.load("marmol_negro.jpg",TEXTURA.negro);
   
