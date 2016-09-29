@@ -2,7 +2,7 @@ var TEXTURA = new Object();
 
 TEXTURA.retrollamada = function(textura){
   var  material = new THREE.MeshBasicMaterial({map: textura}); //mapeo la imagen como material
-  TEXTURA.malla = new THREE.Mesh(new THREE.SphereGeometry(1), material);
+  TEXTURA.malla = new THREE.Mesh(new THREE.SphereGeometry(1,32,32), material);
   TEXTURA.escena.add(TEXTURA.malla);
 }
 
