@@ -9,7 +9,7 @@ TEXTURA.negro = function( textura ){
 }
 
 TEXTURA.madera = function( textura) {
-  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} )
+  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
 var TEXTURA.cargadorBlanco = new THREE.TextureLoader();
