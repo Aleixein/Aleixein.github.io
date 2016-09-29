@@ -18,7 +18,7 @@ TEXTURA.cargadorBlanco.load("marmol_blanco.jpg",TEXTURA.blanco);
 TEXTURA.cargadorNegro.load("marmol_negro.jpg",TEXTURA.negro);
   
 TEXTURA.tablero = function(){
-  
+  var cuboForma = new THREE.BoxGeometry(10,10,10);
   TEXTURA.cuadros = new THREE.Object3D();
 
   for (var i = 0; i < 8; i++ ) {
