@@ -1,5 +1,5 @@
 TEXTURA.setup = function(){
-  var TEXTURA.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
+  TEXTURA.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
   
   TEXTURA.escena = new THREE.Scene();
   TEXTURA.tablero();
