@@ -53,13 +53,13 @@ TEXTURA.base = function( textura) {
   var abajoMalla = new THREE.Mesh(abajoForma);
   var arribaMalla = new THREE.Mesh(arribaForma);
   
-  TEXTURA.marcoForma = new THREE.Geometry();
+  marcoForma = new THREE.Geometry();
   
   marcoForma.merge( izqMalla.geometry, izqMalla.matrix );
   marcoForma.merge( derMalla.geometry, derMalla.matrix );
   marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
   marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
   
-  TEXTURA.marcoMalla = new THREE.Mesh( TEXTURA.marcoForma, baseMadera );
+  TEXTURA.marcoMalla = new THREE.Mesh( marcoForma, baseMadera );
   TEXTURA.escena.add(TEXTURA.marcoMalla);
 }
