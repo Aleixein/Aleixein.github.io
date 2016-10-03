@@ -4,11 +4,11 @@ TEXTURA.setup = function(){
   TEXTURA.escena = new THREE.Scene(); 
   TEXTURA.escena.add(TEXTURA.iluminacion);
   
- // var cargadorCuadrosB = new THREE.TextureLoader();
-//  cargadorCuadrosB.load("marmol_blanco.jpg",TEXTURA.cuadrosBlancos);
+  var cargadorCuadrosB = new THREE.TextureLoader();
+  cargadorCuadrosB.load("marmol_blanco.jpg",TEXTURA.cuadrosBlancos);
   
- // var cargadorCuadrosN = new THREE.TextureLoader();
-//  cargadorCuadrosN.load("marmol_negro.jpg",TEXTURA.cuadrosNegros);
+  var cargadorCuadrosN = new THREE.TextureLoader();
+  cargadorCuadrosN.load("marmol_negro.jpg",TEXTURA.cuadrosNegros);
   
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",TEXTURA.base);
