@@ -26,11 +26,11 @@ TEXTURA.cuadrosNegros = function( textura ){
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 1){        
-        var item = new THREE.Mesh( cuboForma,marmolNegro );
+        var item1 = new THREE.Mesh( cuboForma,marmolNegro );
       }
-      item.position.x = i*10;
-      item.position.z = j*10;
-      TEXTURA.cuadrosN.add(item);
+      item1.position.x = i*10;
+      item1.position.z = j*10;
+      TEXTURA.cuadrosN.add(item1);
     }
   }
   TEXTURA.escena.add(TEXTURA.cuadrosN);
