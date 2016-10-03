@@ -1,13 +1,17 @@
 TEXTURA.setup = function(){
   TEXTURA.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
-  TEXTURA.tablero();
-  TEXTURA.base();
-  TEXTURA.rooks();
+
   TEXTURA.escena = new THREE.Scene(); 
-  TEXTURA.escena.add(TEXTURA.marcoMalla);
-  TEXTURA.escena.add(TEXTURA.cuadros);
-  TEXTURA.escena.add(TEXTURA.torres);
   TEXTURA.escena.add(TEXTURA.iluminacion);
+  
+  var cargadorCBlancos = new THREE.TextureLoader();
+  cargardorCBlancos.load("marmol_blanco.jpg",TEXTURA.cuadrosBlancos);
+  
+  var cargadorCNegros = new THREE.TextureLoader();
+  cargardorCNegros.load("marmol_negro.jpg",TEXTURA.cuadrosNegros);
+  
+  var cargadorBase = new THREE.TextureLoader();
+  cargardorBase.load("madera.jpg",TEXTURA.base);
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
@@ -28,22 +32,11 @@ TEXTURA.setup = function(){
 TEXTURA.loop = function(){
   requestAnimationFrame(TEXTURA.loop);
   
-  if( (TEXTURA.marcoMalla !== undefined) && (TEXTURA.cuadros !== undefined) && (Textura.torres !== undefined) )
+  if( (TEXTURA.marcoMalla !== undefined) && (TEXTURA.cuadros !== undefined) )
   
   TEXTURA.renderizador.render( TEXTURA.escena, TEXTURA.camara );
 }
 
-TEXTURA.blanco = function( textura ){
-  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );  
-}
-
-TEXTURA.negro = function( textura ){
-  var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
-}
-
-TEXTURA.madera = function( textura) {
-  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
-}
 
 TEXTURA.setup();
 TEXTURA.loop();
