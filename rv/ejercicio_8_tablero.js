@@ -1,17 +1,4 @@
 var TEXTURA = new Object();
-
-TEXTURA.blanco = function( textura ){
-  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );  
-}
-
-TEXTURA.negro = function( textura ){
-  var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
-}
-
-TEXTURA.madera = function( textura) {
-  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
-}
-
   
 TEXTURA.tablero = function(){
   var cuboForma = new THREE.BoxGeometry(10,10,10);
