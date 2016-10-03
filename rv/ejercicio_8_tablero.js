@@ -1,10 +1,9 @@
 var TEXTURA = new Object();
-TEXTURA.cuadros = new THREE.Object3D();
 
 TEXTURA.cuadrosBlancos = function( textura ){
   var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} ); 
   //var cuboForma = new THREE.BoxGeometry(10,10,10);
-  //TEXTURA.cuadros = new THREE.Object3D();
+  TEXTURA.cuadrosB = new THREE.Object3D();
   
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
@@ -13,16 +12,16 @@ TEXTURA.cuadrosBlancos = function( textura ){
       }
       item.position.x = i*10;
       item.position.z = j*10;
-      TEXTURA.cuadros.add(item);
+      TEXTURA.cuadrosB.add(item);
     }
   }
-  TEXTURA.escena.add(TEXTURA.cuadros);
+  TEXTURA.escena.add(TEXTURA.cuadrosB);
 }
 
 TEXTURA.cuadrosNegros = function( textura ){
   var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
   //var cuboForma = new THREE.BoxGeometry(10,10,10);
-  //TEXTURA.cuadros = new THREE.Object3D();
+  TEXTURA.cuadrosN = new THREE.Object3D();
   
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
@@ -31,10 +30,10 @@ TEXTURA.cuadrosNegros = function( textura ){
       }
       item.position.x = i*10;
       item.position.z = j*10;
-      TEXTURA.cuadros.add(item);
+      TEXTURA.cuadrosN.add(item);
     }
   }
-  TEXTURA.escena.add(TEXTURA.cuadros);
+  TEXTURA.escena.add(TEXTURA.cuadrosN);
 }
 
 TEXTURA.base = function( textura) {
