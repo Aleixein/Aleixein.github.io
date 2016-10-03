@@ -1,6 +1,8 @@
 TEXTURA.setup = function(){
   TEXTURA.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
-  
+  TEXTURA.tablero();
+  TEXTURA.base();
+  TEXTURA.rooks();
   TEXTURA.escena = new THREE.Scene(); 
   TEXTURA.escena.add(TEXTURA.marcoMalla);
   TEXTURA.escena.add(TEXTURA.cuadros);
@@ -31,8 +33,17 @@ TEXTURA.loop = function(){
   TEXTURA.renderizador.render( TEXTURA.escena, TEXTURA.camara );
 }
 
- TEXTURA.tablero();
-  TEXTURA.base();
-  TEXTURA.rooks();
+TEXTURA.blanco = function( textura ){
+  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );  
+}
+
+TEXTURA.negro = function( textura ){
+  var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
+}
+
+TEXTURA.madera = function( textura) {
+  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
+}
+
 TEXTURA.setup();
 TEXTURA.loop();
