@@ -1,10 +1,7 @@
 TEXTURA.setup = function(){
   TEXTURA.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
   
-  TEXTURA.escena = new THREE.Scene();
-  TEXTURA.tablero();
-  TEXTURA.base();
-  TEXTURA.rooks();
+  TEXTURA.escena = new THREE.Scene(); 
   TEXTURA.escena.add(TEXTURA.marcoMalla);
   TEXTURA.escena.add(TEXTURA.cuadros);
   TEXTURA.escena.add(TEXTURA.torres);
@@ -34,5 +31,8 @@ TEXTURA.loop = function(){
   TEXTURA.renderizador.render( TEXTURA.escena, TEXTURA.camara );
 }
 
+ TEXTURA.tablero();
+  TEXTURA.base();
+  TEXTURA.rooks();
 TEXTURA.setup();
 TEXTURA.loop();
