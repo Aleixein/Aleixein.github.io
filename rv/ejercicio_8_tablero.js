@@ -2,7 +2,7 @@ var TEXTURA = new Object();
 
 TEXTURA.cuadrosBlancos = function( textura ){
   var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} ); 
-  //var cuboForma = new THREE.BoxGeometry(10,10,10);
+  var cuboForma = new THREE.BoxGeometry(10,10,10);
   TEXTURA.cuadrosB = new THREE.Object3D();
   
   for (var i = 0; i < 8; i++ ) {
@@ -20,7 +20,7 @@ TEXTURA.cuadrosBlancos = function( textura ){
 
 TEXTURA.cuadrosNegros = function( textura ){
   var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
-  //var cuboForma = new THREE.BoxGeometry(10,10,10);
+  var cuboForma = new THREE.BoxGeometry(10,10,10);
   TEXTURA.cuadrosN = new THREE.Object3D();
   
   for (var i = 0; i < 8; i++ ) {
