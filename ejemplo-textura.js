@@ -31,6 +31,6 @@ TEXTURA.loop = function(){
   TEXTURA.renderizador.render(TEXTURA.escena, TEXTURA.camara);
 
 }
-
+var cuboForma = new THREE.BoxGeometry(10,10,10);
 TEXTURA.setup();
 TEXTURA.loop();
