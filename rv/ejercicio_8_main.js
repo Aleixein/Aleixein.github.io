@@ -10,8 +10,8 @@ TEXTURA.setup = function(){
 //  var cargadorCuadrosN = new THREE.TextureLoader();
 //  cargardorCuadrosN.load("marmol_negro.jpg",TEXTURA.cuadrosNegros);
   
-  var cargadorBase = new THREE.TextureLoader();
-  cargardorBase.load("madera.jpg",TEXTURA.base);
+  var cargador = new THREE.TextureLoader();
+  cargardor.load("madera.jpg",TEXTURA.base);
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
