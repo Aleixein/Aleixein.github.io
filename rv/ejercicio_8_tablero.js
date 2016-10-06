@@ -1,9 +1,9 @@
-var TEXTURA = new Object();
+var AJEDREZ = new Object();
 
-TEXTURA.cuadrosBlancos = function( textura ){
+AJEDREZ.cuadrosBlancos = function( textura ){
   var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} ); 
   var cuboForma = new THREE.BoxGeometry(10,10,10);
-  TEXTURA.cuadrosB = new THREE.Object3D();
+  AJEDREZ.cuadrosB = new THREE.Object3D();
   
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
@@ -12,16 +12,16 @@ TEXTURA.cuadrosBlancos = function( textura ){
       }
       item.position.x = i*10;
       item.position.z = j*10;
-      TEXTURA.cuadrosB.add(item);
+      AJEDREZ.cuadrosB.add(item);
     }
   }
-  TEXTURA.escena.add(TEXTURA.cuadrosB);
+  AJEDREZ.escena.add(AJEDREZ.cuadrosB);
 }
 
-TEXTURA.cuadrosNegros = function( textura ){
+AJEDREZ.cuadrosNegros = function( textura ){
   var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
   var cuboForma = new THREE.BoxGeometry(10,10,10);
-  TEXTURA.cuadrosN = new THREE.Object3D();
+  AJEDREZ.cuadrosN = new THREE.Object3D();
   
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
@@ -30,13 +30,14 @@ TEXTURA.cuadrosNegros = function( textura ){
       }
       item1.position.x = i*10;
       item1.position.z = j*10;
-      TEXTURA.cuadrosN.add(item1);
+      AJEDREZ.cuadrosN.add(item1);
     }
   }
-  TEXTURA.escena.add(TEXTURA.cuadrosN);
+  AJEDREZ.escena.add(AJEDREZ.cuadrosN);
 }
 
-TEXTURA.base = function( textura) {
+AJEDREZ.base = function( textura) {
+  THREE.Geometry.call(this);
   var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
   var izqForma = new THREE.BoxGeometry(10,10,100);
   var derForma = new THREE.BoxGeometry(10,10,100);
@@ -52,13 +53,11 @@ TEXTURA.base = function( textura) {
   var abajoMalla = new THREE.Mesh(abajoForma);
   var arribaMalla = new THREE.Mesh(arribaForma);
   
-  marcoForma = new THREE.Geometry();
+  this.merge( izqMalla.geometry, izqMalla.matrix );
+  this.merge( derMalla.geometry, derMalla.matrix );
+  this.merge( abajoMalla.geometry, abajoMalla.matrix );
+  this.merge( arribaMalla.geometry, arribaMalla.matrix );
   
-  marcoForma.merge( izqMalla.geometry, izqMalla.matrix );
-  marcoForma.merge( derMalla.geometry, derMalla.matrix );
-  marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
-  marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
-  
-  TEXTURA.marcoMalla = new THREE.Mesh( marcoForma, baseMadera );
-  TEXTURA.escena.add(TEXTURA.marcoMalla);
+  AJEDREZ.marcoMalla = new THREE.Mesh( base, baseMadera );
+  AJEDREZ.escena.add(AJEDREZ.marcoMalla);
 }
