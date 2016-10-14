@@ -23,8 +23,8 @@ PROTOTIPO.setup = function(){
   arbol1.position.x = 5;
   arbol2.position.x = -5;
   
-  PROTOTIPO.camera = new THREE.PerspectiveCamera();
-  PROTOTIPO.camera.position.z = 20;
+  PROTOTIPO.camara = new THREE.PerspectiveCamera();
+  PROTOTIPO.camara.position.z = 20;
   
   var lienzo = document.getElementById("ejemplo-prototipo");
   PROTOTIPO.renderizador = new THREE.WebGLRenderer( { canvas:lienzo, antialias: true } );
