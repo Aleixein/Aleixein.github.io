@@ -27,7 +27,7 @@ PROTOTIPO.setup = function(){
   PROTOTIPO.camara.position.z = 20;
   
   var lienzo = document.getElementById("ejemplo-prototipo");
-  PROTOTIPO.renderizador = new THREE.WebGLRenderer( { canvas:lienzo, antialias: true } );
+  PROTOTIPO.renderizador = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
   PROTOTIPO.renderizador.setSize(600,600);
   
   PROTOTIPO.escena = new THREE.Scene();
