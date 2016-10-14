@@ -16,7 +16,7 @@ PROTOTIPO.ArbolGeometry = function(){
 
 PROTOTIPO.ArbolGeometry.prototype = new THREE.Geometry();
 
-PROTOTIPO.Setup = function(){
+PROTOTIPO.setup = function(){
   var arbol1 = new THREE.Mesh( new PROTOTIPO.ArbolGeometry(), new THREE.MeshNormalMaterial() );
   var arbol2 = new THREE.Mesh( new PROTOTIPO.ArbolGeometry(), new THREE.MeshNormalMaterial() );
   
