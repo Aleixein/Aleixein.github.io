@@ -9,7 +9,7 @@ AJEDREZ.setup = function(){
   
  // var cargadorCuadrosN = new THREE.TextureLoader();
 //  cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
-  
+  AJEDREZ.tablero
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",AJEDREZ.base);
   
