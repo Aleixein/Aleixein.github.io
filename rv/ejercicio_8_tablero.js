@@ -37,7 +37,7 @@ AJEDREZ.cuadrosNegros = function( textura ){
 }
 
 AJEDREZ.base = function( textura) {
-  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
+  var baseMadera = new THREE.MeshBasicMaterial( {map: textura} );
   var izqForma = new THREE.BoxGeometry(10,10,100);
   var derForma = new THREE.BoxGeometry(10,10,100);
   var abajoForma = new THREE.BoxGeometry(80,10,10);
