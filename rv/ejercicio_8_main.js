@@ -4,11 +4,11 @@ AJEDREZ.setup = function(){
   AJEDREZ.escena = new THREE.Scene(); 
   AJEDREZ.escena.add(AJEDREZ.iluminacion);
   
-  //var cargadorCuadrosB = new THREE.TextureLoader();
- // cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);
+  var cargadorCuadrosB = new THREE.TextureLoader();
+  cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);
   
- // var cargadorCuadrosN = new THREE.TextureLoader();
- // cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
+  var cargadorCuadrosN = new THREE.TextureLoader();
+  cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
   
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",AJEDREZ.base);
