@@ -10,8 +10,7 @@ AJEDREZ.marmolBlanco = function( textura){
       if ( (i+j) % 2 == 0){
         var item = new THREE.Mesh( cuboForma,colorBlanco );
       }     
-      item.position.x = i*10;
-      item.position.z = j*10;
+      item.translate(i*10,0,j*10);
       AJEDREZ.cuadros.add(item);
     }
   }
@@ -23,11 +22,10 @@ AJEDREZ.marmolNegro = function( textura){
   var colorNegro = new THREE.MeshLambertMaterial( {map: textura} );
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
-      if ( (i+j) % 2 == 0){    
+      if ( (i+j) % 2 !== 0){    
         var item = new THREE.Mesh( cuboForma,colorNegro );
       }    
-      item.position.x = i*10+10;
-      item.position.z = j*10+10;
+      item.translate(i*10,0,j*10);
       AJEDREZ.cuadros.add(item);
     }
   }
