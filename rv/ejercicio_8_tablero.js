@@ -4,8 +4,8 @@ AJEDREZ.marmolBlanco = function( textura){
   var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
-AJEDREZ.marmolBlanco = function( textura){
-  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
+AJEDREZ.marmolNegro = function( textura){
+  var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
 AJEDREZ.cuadros = function(){
