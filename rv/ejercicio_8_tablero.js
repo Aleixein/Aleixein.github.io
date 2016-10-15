@@ -17,19 +17,18 @@ AJEDREZ.tablero = function(){
   cargadorCuadrosB.load("marmol_blanco.jpg",marmolBlanco);
   cargadorCuadrosN.load("marmol_negro.jpg",marmolNegro);
   for (var i = 0; i < 8; i++ ) {
-  for ( var j = 0; j < 8; j++ ) {
-    if ( (i+j) % 2 == 0){
-      
-      var item = new THREE.Mesh( cuboForma,colorBlanco );
+    for ( var j = 0; j < 8; j++ ) {
+      if ( (i+j) % 2 == 0){      
+        var item = new THREE.Mesh( cuboForma,colorBlanco );
+      }
+      else{
+        var item = new THREE.Mesh( cuboForma,colorGris );
+      }
+      item.position.x = i*10;
+      item.position.z = j*10;
+      AJEDREZ.cuadros.add(item);
     }
-    else{
-      var item = new THREE.Mesh( cuboForma,colorGris );
-    }
-    item.position.x = i*10;
-    item.position.z = j*10;
-    cuadros.add(item);
   }
-}
 }
 
 AJEDREZ.base = function( textura) {
