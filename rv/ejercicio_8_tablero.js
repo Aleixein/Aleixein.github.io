@@ -9,7 +9,11 @@ AJEDREZ.marmolNegro = function( textura){
 }
 
 AJEDREZ.tablero = function(){
- 
+  var cargadorCuadrosB = new THREE.TextureLoader();
+  cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);  
+  var cargadorCuadrosN = new THREE.TextureLoader();
+  cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
+  
   AJEDREZ.cuadros = new THREE.Object3D();
   var cuboForma = new THREE.BoxGeometry(10,10,10);
   var material = AJEDREZ.colorBlanco;
