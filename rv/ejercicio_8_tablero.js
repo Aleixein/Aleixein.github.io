@@ -9,7 +9,7 @@ AJEDREZ.marmolNegro = function( textura){
 }
 
 AJEDREZ.tablero = function(){
-  if (colorBlanco!==undefined && color Negro !== undefined){
+  if ((colorBlanco!==undefined) && (color Negro !== undefined)){
   AJEDREZ.cuadros = new THREE.Object3D();
   var cuboForma = new THREE.BoxGeometry(10,10,10);
   var material = colorBlanco;
