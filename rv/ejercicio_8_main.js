@@ -32,7 +32,7 @@ AJEDREZ.setup = function(){
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadrosB !== undefined) && (AJEDREZ.cuadrosB !== undefined))
+  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadrosB !== undefined) && (AJEDREZ.cuadrosN !== undefined))
   
   AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
 }
