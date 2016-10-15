@@ -8,7 +8,7 @@ AJEDREZ.marmolNegro = function( textura){
   var colorNegro = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
-AJEDREZ.cuadros = function(){
+AJEDREZ.tablero = function(){
   var cargadorCuadrosB = new THREE.TextureLoader();
   cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);
   
