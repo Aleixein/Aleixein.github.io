@@ -14,9 +14,10 @@ AJEDREZ.cuadros = function(){
   
   var cargadorCuadrosN = new THREE.TextureLoader();
   cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
+  
   AJEDREZ.cuadros = new THREE.Object3D();
   var cuboForma = new THREE.BoxGeometry(10,10,10);
-  var material = 0;
+  var material = colorBlanco;
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){
