@@ -12,8 +12,6 @@ AJEDREZ.setup = function(){
   
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",AJEDREZ.base);
-
-  AJEDREZ.tablero();
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
