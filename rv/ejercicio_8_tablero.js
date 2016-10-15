@@ -1,40 +1,35 @@
 var AJEDREZ = new Object();
 
-AJEDREZ.cuadrosBlancos = function( textura ){
-  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} ); 
-  //var cuboForma = new THREE.BoxGeometry(10,10,10);
-  AJEDREZ.cuadrosB = new THREE.Object3D();
-  
+AJEDREZ.marmolBlanco = function( textura){
+  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
+}
+
+AJEDREZ.marmolBlanco = function( textura){
+  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
+}
+
+AJEDREZ.cuadros = function(){
+  AJEDREZ.cuadros = new THREE.Object3D();
+  var cuboForma = new THREE.BoxGeometry(10,10,10);
+  var material = 0;
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){
-        var item = new THREE.Mesh( cuboForma,marmolBlanco );
+        material = marmolBlanco;
       }
+      else{
+        material = marmolNegro;
+      }
+      var item = new THREE.Mesh( cuboForma,material );
       item.position.x = i*10;
       item.position.z = j*10;
-      AJEDREZ.cuadrosB.add(item);
+      AJEDREZ.cuadros.add(item);
     }
   }
-  AJEDREZ.escena.add(AJEDREZ.cuadrosB);
+  AJEDREZ.escena.add(AJEDREZ.cuadros);
 }
 
-AJEDREZ.cuadrosNegros = function( textura ){
-  var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
-  //var cuboForma = new THREE.BoxGeometry(10,10,10);
-  AJEDREZ.cuadrosN = new THREE.Object3D();
-  
-  for (var i = 0; i < 8; i++ ) {
-    for ( var j = 0; j < 8; j++ ) {
-      if ( (i+j) % 2 != 0){        
-        var item1 = new THREE.Mesh( cuboForma,marmolNegro );
-      }
-      item1.position.x = i*10;
-      item1.position.z = j*10;
-      AJEDREZ.cuadrosN.add(item1);
-    }
-  }
-  AJEDREZ.escena.add(AJEDREZ.cuadrosN);
-}
+
 
 AJEDREZ.base = function( textura) {
   var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
