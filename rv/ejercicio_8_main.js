@@ -1,8 +1,8 @@
 AJEDREZ.setup = function(){
-  AJEDREZ.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
+  //AJEDREZ.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
 
-  AJEDREZ.escena = new THREE.Scene(); 
-  AJEDREZ.escena.add(AJEDREZ.iluminacion);
+  //AJEDREZ.escena = new THREE.Scene(); 
+  //AJEDREZ.escena.add(AJEDREZ.iluminacion);
   
   //var cargadorCuadrosB = new THREE.TextureLoader();
   //cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.cuadrosBlancos);
