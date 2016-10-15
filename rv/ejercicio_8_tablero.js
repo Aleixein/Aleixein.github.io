@@ -29,6 +29,7 @@ AJEDREZ.tablero = function(){
       AJEDREZ.cuadros.add(item);
     }
   }
+  AJEDREZ.escena.add(cuadros);
 }
 
 AJEDREZ.base = function( textura) {
