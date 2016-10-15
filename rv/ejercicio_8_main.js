@@ -5,13 +5,15 @@ AJEDREZ.setup = function(){
   AJEDREZ.escena.add(AJEDREZ.iluminacion);
   
   var cargadorCuadrosB = new THREE.TextureLoader();
-  cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.cuadrosBlancos);
+  cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);
   
   var cargadorCuadrosN = new THREE.TextureLoader();
-  cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.cuadrosNegros);
+  cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
   
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",AJEDREZ.base);
+
+  Ajedrez.cuadros();
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
@@ -32,11 +34,10 @@ AJEDREZ.setup = function(){
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadrosB !== undefined) && (AJEDREZ.cuadrosN !== undefined) )
+  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined))
   
   AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
 }
 
-var cuboForma = new THREE.BoxGeometry(10,10,10);
 AJEDREZ.setup();
 AJEDREZ.loop();
