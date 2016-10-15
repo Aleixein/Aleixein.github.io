@@ -3,23 +3,22 @@ var AJEDREZ = new Object();
 AJEDREZ.cuadros = new THREE.Object3D();
 
 AJEDREZ.tablero = function(){
-  marmolBlanco = function(textura){
-    colorBlanco = new THREE.MeshLambertMaterial({map: textura});
-  }
-  marmolNegro = function(textura){
-    colorNegro = new THREE.MeshLambertMaterial({map: textura});
-  }
+ 
   var cuboForma = new THREE.BoxGeometry(10,10,10);
   var cargadorCuadrosB = new THREE.TextureLoader();
   var cargadorCuadrosN = new THREE.TextureLoader();
-  cargadorCuadrosB.load("marmol_blanco.jpg",marmolBlanco);
-  cargadorCuadrosN.load("marmol_negro.jpg",marmolNegro);
+  //cargadorCuadrosB.load("marmol_blanco.jpg",marmolBlanco);
+  //cargadorCuadrosN.load("marmol_negro.jpg",marmolNegro);
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
-      if ( (i+j) % 2 == 0){      
+      if ( (i+j) % 2 == 0){            
+        cargadorCuadrosB.load("marmol_blanco.jpg",function(textura){
+                                                  colorBlanco = new THREE.MeshLambertMaterial({map: textura});});
         var item = new THREE.Mesh( cuboForma,colorBlanco );
       }
       else{
+        cargadorCuadrosN.load("marmol_negro.jpg",function(textura){
+                                                  colorNegro = new THREE.MeshLambertMaterial({map: textura});});
         var item = new THREE.Mesh( cuboForma,colorNegro );
       }
       item.position.x = i*10;
