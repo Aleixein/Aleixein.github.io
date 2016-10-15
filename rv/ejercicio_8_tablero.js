@@ -8,11 +8,11 @@ AJEDREZ.marmolBlanco = function( textura){
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){
-        var item = new THREE.Mesh( cuboForma,colorBlanco );
+        var itemB = new THREE.Mesh( cuboForma,colorBlanco );
       }     
-      item.position.x = i*10;
-      item.position.z = j*10;
-      AJEDREZ.cuadros.add(item);
+      itemB.position.x = i*10;
+      itemB.position.z = j*10;
+      AJEDREZ.cuadros.add(itemB);
     }
   }
   AJEDREZ.escena.add(AJEDREZ.cuadros);
@@ -23,11 +23,11 @@ AJEDREZ.marmolNegro = function( textura){
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 !== 0){    
-        var item = new THREE.Mesh( cuboForma,colorNegro );
+        var itemN = new THREE.Mesh( cuboForma,colorNegro );
       }    
-      item.position.x = i*10;
-      item.position.z = j*10;
-      AJEDREZ.cuadros.add(item);
+      itemN.position.x = i*10;
+      itemN.position.z = j*10;
+      AJEDREZ.cuadros.add(itemN);
     }
   }
   AJEDREZ.escena.add(AJEDREZ.cuadros);
