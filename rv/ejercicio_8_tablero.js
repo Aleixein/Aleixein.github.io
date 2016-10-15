@@ -37,7 +37,6 @@ AJEDREZ.cuadrosNegros = function( textura ){
 }
 
 AJEDREZ.base = function( textura) {
-  THREE.Geometry.call(this);
   var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
   var izqForma = new THREE.BoxGeometry(10,10,100);
   var derForma = new THREE.BoxGeometry(10,10,100);
@@ -53,11 +52,13 @@ AJEDREZ.base = function( textura) {
   var abajoMalla = new THREE.Mesh(abajoForma);
   var arribaMalla = new THREE.Mesh(arribaForma);
   
-  this.merge( izqMalla.geometry, izqMalla.matrix );
-  this.merge( derMalla.geometry, derMalla.matrix );
-  this.merge( abajoMalla.geometry, abajoMalla.matrix );
-  this.merge( arribaMalla.geometry, arribaMalla.matrix );
+  var marcoForma = new THREE.Geometry();
   
-  AJEDREZ.marcoMalla = new THREE.Mesh( base, baseMadera );
+  marcoForma.merge( izqMalla.geometry, izqMalla.matrix );
+  marcoForma.merge( derMalla.geometry, derMalla.matrix );
+  marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
+  marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
+  
+  AJEDREZ.marcoMalla = new THREE.Mesh( marcoForma, baseMadera );
   AJEDREZ.escena.add(AJEDREZ.marcoMalla);
 }
