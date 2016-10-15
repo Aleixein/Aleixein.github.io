@@ -1,7 +1,7 @@
 AJEDREZ.setup = function(){
   //AJEDREZ.iluminacion = new THREE.AmbientLight( 0xFFFFFF );
 
-  //AJEDREZ.escena = new THREE.Scene(); 
+  AJEDREZ.escena = new THREE.Scene(); 
   //AJEDREZ.escena.add(AJEDREZ.iluminacion);
   
   //var cargadorCuadrosB = new THREE.TextureLoader();
