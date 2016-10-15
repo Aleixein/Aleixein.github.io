@@ -1,31 +1,15 @@
 var AJEDREZ = new Object();
 
+AJEDREZ.cuadros = new THREE.Object3D();
+var cuboForma = new THREE.BoxGeometry(10,10,10);
+
 AJEDREZ.marmolBlanco = function( textura){
-  AJEDREZ.colorBlanco = new THREE.MeshLambertMaterial( {map: textura} );
-}
-
-AJEDREZ.marmolNegro = function( textura){
-  AJEDREZ.colorNegro = new THREE.MeshLambertMaterial( {map: textura} );
-}
-
-AJEDREZ.tablero = function(){
-  //var cargadorCuadrosB = new THREE.TextureLoader();
- // cargadorCuadrosB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);  
-  //var cargadorCuadrosN = new THREE.TextureLoader();
-  //cargadorCuadrosN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
-  
-  AJEDREZ.cuadros = new THREE.Object3D();
-  var cuboForma = new THREE.BoxGeometry(10,10,10);
- 
+  var colorBlanco = new THREE.MeshLambertMaterial( {map: textura} );
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){
-        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorBlanco );
-      }
-      else{
-        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorNegro );
-      }
-      //var item = new THREE.Mesh( cuboForma,material );
+        var item = new THREE.Mesh( cuboForma,colorBlanco );
+      }     
       item.position.x = i*10;
       item.position.z = j*10;
       AJEDREZ.cuadros.add(item);
@@ -34,7 +18,20 @@ AJEDREZ.tablero = function(){
   AJEDREZ.escena.add(AJEDREZ.cuadros);
 }
 
-
+AJEDREZ.marmolNegro = function( textura){
+  var colorNegro = new THREE.MeshLambertMaterial( {map: textura} );
+  for (var i = 0; i < 8; i++ ) {
+    for ( var j = 0; j < 8; j++ ) {
+      if ( (i+j) % 2 !== 0){
+        var item = new THREE.Mesh( cuboForma,colorNegro );
+      }
+      item.position.x = i*10;
+      item.position.z = j*10;
+      AJEDREZ.cuadros.add(item);
+    }
+  }
+  AJEDREZ.escena.add(AJEDREZ.cuadros);
+}
 
 AJEDREZ.base = function( textura) {
   var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
