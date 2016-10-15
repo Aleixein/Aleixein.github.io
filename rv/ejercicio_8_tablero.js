@@ -13,13 +13,13 @@ AJEDREZ.tablero = function(){
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){            
         cargadorCuadrosB.load("marmol_blanco.jpg",function(textura){
-                                                  AJEDREZ.colorBlanco = new THREE.MeshLambertMaterial({map: textura});});
-        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorBlanco );
+                                                  colorBlanco = new THREE.MeshLambertMaterial({map: textura});});
+        var item = new THREE.Mesh( cuboForma,colorBlanco );
       }
       else{
         cargadorCuadrosN.load("marmol_negro.jpg",function(textura){
-                                                  AJEDREZ.colorNegro = new THREE.MeshLambertMaterial({map: textura});});
-        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorNegro );
+                                                  colorNegro = new THREE.MeshLambertMaterial({map: textura});});
+        var item = new THREE.Mesh( cuboForma,colorNegro );
       }
       item.position.x = i*10;
       item.position.z = j*10;
