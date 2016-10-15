@@ -16,16 +16,16 @@ AJEDREZ.tablero = function(){
   
   AJEDREZ.cuadros = new THREE.Object3D();
   var cuboForma = new THREE.BoxGeometry(10,10,10);
-  var material = AJEDREZ.colorBlanco;
+ 
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){
-        material = AJEDREZ.colorBlanco;
+        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorBlanco );
       }
       else{
-        material = AJEDREZ.colorNegro;
+        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorNegro );
       }
-      var item = new THREE.Mesh( cuboForma,material );
+      //var item = new THREE.Mesh( cuboForma,material );
       item.position.x = i*10;
       item.position.z = j*10;
       AJEDREZ.cuadros.add(item);
