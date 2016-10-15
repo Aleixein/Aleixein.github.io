@@ -20,7 +20,7 @@ AJEDREZ.tablero = function(){
         var item = new THREE.Mesh( cuboForma,colorBlanco );
       }
       else{
-        var item = new THREE.Mesh( cuboForma,colorGris );
+        var item = new THREE.Mesh( cuboForma,colorNegro );
       }
       item.position.x = i*10;
       item.position.z = j*10;
