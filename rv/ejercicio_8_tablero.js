@@ -1,24 +1,25 @@
 var AJEDREZ = new Object();
 
 AJEDREZ.marmolBlanco = function( textura){
-  var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
+  var colorBlanco = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
 AJEDREZ.marmolNegro = function( textura){
-  var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
+  var colorNegro = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
 AJEDREZ.cuadros = function(){
+
   AJEDREZ.cuadros = new THREE.Object3D();
   var cuboForma = new THREE.BoxGeometry(10,10,10);
   var material = 0;
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){
-        material = marmolBlanco;
+        material = colorBlanco;
       }
       else{
-        material = marmolNegro;
+        material = colorNegro;
       }
       var item = new THREE.Mesh( cuboForma,material );
       item.position.x = i*10;
