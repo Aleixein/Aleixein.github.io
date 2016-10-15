@@ -25,7 +25,7 @@ AJEDREZ.cuadrosNegros = function( textura ){
   
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
-      if ( (i+j) % 2 == 1){        
+      if ( (i+j) % 2 != 0){        
         var item1 = new THREE.Mesh( cuboForma,marmolNegro );
       }
       item1.position.x = i*10;
