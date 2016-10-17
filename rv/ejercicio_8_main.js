@@ -4,14 +4,15 @@ AJEDREZ.setup = function(){
   AJEDREZ.escena = new THREE.Scene(); 
   AJEDREZ.escena.add(AJEDREZ.iluminacion);
   
-  var cargadorColorB = new THREE.TextureLoader();
-  cargadorColorB.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);
+  var cargadorColorBlanco = new THREE.TextureLoader();
+  cargadorColorBlanco.load("marmol_blanco.jpg",AJEDREZ.colorBlanco);
+  var cargadorColorNegro = new THREE.TextureLoader();
+  cargadorColorNegro.load("marmol_negro.jpg",AJEDREZ.colorNegro);
   
-  var cargadorColorN = new THREE.TextureLoader();
-  cargadorColorN.load("marmol_negro.jpg",AJEDREZ.marmolNegro);
   AJEDREZ.tablero();
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",AJEDREZ.base);
+  
   AJEDREZ.torres();
   
   var campoVision = 55; //en grados
