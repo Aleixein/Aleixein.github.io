@@ -12,6 +12,7 @@ AJEDREZ.setup = function(){
   AJEDREZ.tablero();
   var cargadorBase = new THREE.TextureLoader();
   cargadorBase.load("madera.JPG",AJEDREZ.base);
+  AJEDREZ.torres();
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
@@ -32,7 +33,7 @@ AJEDREZ.setup = function(){
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) )
+  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) && (torreBlanca1 !== undefined) && (torreNegra1 !== undefined) )
   
   AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
 }
