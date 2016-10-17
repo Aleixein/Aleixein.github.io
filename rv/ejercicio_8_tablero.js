@@ -1,5 +1,6 @@
 var AJEDREZ = new Object();
-
+var mat1=0;
+var mat2=0;
 AJEDREZ.cuadros = new THREE.Object3D();
 
 AJEDREZ.marmolBlanco = function (textura){
