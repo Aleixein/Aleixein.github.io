@@ -51,16 +51,16 @@ AJEDREZ.torreForma = function(){
 AJEDREZ.torreForma.prototype = new THREE.Geometry();
 
 AJEDREZ.torres = function(){
-  var torreBlanca1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
-  var torreBlanca2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
-  var torreNegra1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
-  var torreNegra2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
-  torreBlanca1.position.y = 5;
-  torreBlanca2.translate(70,5,70);
-  torreNegra1.translate(0,5,70);
-  torreNegra2.translate(70,5,0);
-  AJEDREZ.escena.add(torreBlanca1);
-  AJEDREZ.escena.add(torreBlanca2);
-  AJEDREZ.escena.add(torreNegra1);
-  AJEDREZ.escena.add(torreNegra2);
+  AJEDREZ.torreBlanca1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
+  AJEDREZ.torreBlanca2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
+  AJEDREZ.torreNegra1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
+  AJEDREZ.torreNegra2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
+  AJEDREZ.torreBlanca1.position.y = 5;
+  AJEDREZ.torreBlanca2.translate(70,5,70);
+  AJEDREZ.torreNegra1.translate(0,5,70);
+  AJEDREZ.torreNegra2.translate(70,5,0);
+  AJEDREZ.escena.add(AJEDREZ.torreBlanca1);
+  AJEDREZ.escena.add(AJEDREZ.torreBlanca2);
+  AJEDREZ.escena.add(AJEDREZ.torreNegra1);
+  AJEDREZ.escena.add(AJEDREZ.torreNegra2);
 }
