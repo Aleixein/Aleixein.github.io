@@ -3,11 +3,11 @@ var AJEDREZ = new Object();
 AJEDREZ.cuadros = new THREE.Object3D();
 
 AJEDREZ.marmolBlanco = function (textura){
- var AJEDREZ.marmolB = new THREE.MeshLambertMaterial( {map: textura} );
+ var marmolB = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
 AJEDREZ.marmolNegro = function (textura){
- var AJEDREZ.marmolN = new THREE.MeshLambertMaterial( {map: textura} );
+ var marmolN = new THREE.MeshLambertMaterial( {map: textura} );
 }
 
 AJEDREZ.tablero = function(){
