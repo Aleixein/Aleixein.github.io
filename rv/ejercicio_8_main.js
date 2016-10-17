@@ -34,7 +34,7 @@ AJEDREZ.setup = function(){
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) && (mat1 == 1) && (mat2 == 1) )
+  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) && (AJEDREZ.torreBlanca1 !== undefined) && (AJEDREZ.torreBlanca2 !== undefined) && (AJEDREZ.torreNegra1 !== undefined) && (AJEDREZ.torreNegra2 !== undefined) )
   
   AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
 }
