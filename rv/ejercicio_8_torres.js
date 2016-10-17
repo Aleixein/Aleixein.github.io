@@ -50,17 +50,21 @@ AJEDREZ.torreForma = function(){
 
 AJEDREZ.torreForma.prototype = new THREE.Geometry();
 
-/*AJEDREZ.torres = function(){
+AJEDREZ.torres = function(){
   AJEDREZ.torreBlanca1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
   AJEDREZ.torreBlanca2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
   AJEDREZ.torreNegra1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
   AJEDREZ.torreNegra2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
   AJEDREZ.torreBlanca1.position.y = 5;
-  AJEDREZ.torreBlanca2.translate(70,5,70);
-  AJEDREZ.torreNegra1.translate(0,5,70);
-  AJEDREZ.torreNegra2.translate(70,5,0);
+  AJEDREZ.torreBlanca2.position.x = 70;
+  AJEDREZ.torreBlanca2.position.y = 5;
+  AJEDREZ.torreBlanca2.position.z = 70;
+  AJEDREZ.torreNegra1.position.y = 5;
+  AJEDREZ.torreNegra1.position.z = 70;
+  AJEDREZ.torreNegra2.position.x = 70;
+  AJEDREZ.torreNegra2.position.y = 5;
   AJEDREZ.escena.add(AJEDREZ.torreBlanca1);
   AJEDREZ.escena.add(AJEDREZ.torreBlanca2);
   AJEDREZ.escena.add(AJEDREZ.torreNegra1);
   AJEDREZ.escena.add(AJEDREZ.torreNegra2);
-}*/
+}
