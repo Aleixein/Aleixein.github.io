@@ -3,13 +3,13 @@ var mat1=0;
 var mat2=0;
 AJEDREZ.cuadros = new THREE.Object3D();
 
-AJEDREZ.marmolBlanco = function (textura){
- var marmolB = new THREE.MeshLambertMaterial( {map: textura} );
+AJEDREZ.colorBlanco = function (textura){
+ AJEDREZ.marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
  mat1=1;
 }
 
-AJEDREZ.marmolNegro = function (textura){
- var marmolN = new THREE.MeshLambertMaterial( {map: textura} );
+AJEDREZ.colorNegro = function (textura){
+ AJEDREZ.marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
  mat2=1;
 }
 
@@ -24,13 +24,13 @@ AJEDREZ.tablero = function(){
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){            
         cargadorCuadrosB.load("marmol_blanco.jpg",function(textura){
-                                                  AJEDREZ.colorBlanco = new THREE.MeshLambertMaterial({map: textura});});
-        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorBlanco );
+                                                  AJEDREZ.colorB = new THREE.MeshLambertMaterial({map: textura});});
+        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorB );
       }
       else{
         cargadorCuadrosN.load("marmol_negro.jpg",function(textura){
-                                                  AJEDREZ.colorNegro = new THREE.MeshLambertMaterial({map: textura});});
-        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorNegro );
+                                                  AJEDREZ.colorN = new THREE.MeshLambertMaterial({map: textura});});
+        var item = new THREE.Mesh( cuboForma,AJEDREZ.colorN );
       }
       item.position.x = i*10;
       item.position.z = j*10;
