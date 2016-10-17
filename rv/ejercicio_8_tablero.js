@@ -10,7 +10,7 @@ AJEDREZ.marmolBlanco = function (textura){
 
 AJEDREZ.marmolNegro = function (textura){
  var marmolN = new THREE.MeshLambertMaterial( {map: textura} );
- mat2=2;
+ mat2=1;
 }
 
 AJEDREZ.tablero = function(){
