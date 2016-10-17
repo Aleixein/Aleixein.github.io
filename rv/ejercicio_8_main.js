@@ -3,32 +3,15 @@ AJEDREZ.setup = function(){
 
   AJEDREZ.escena = new THREE.Scene(); 
   AJEDREZ.escena.add(AJEDREZ.iluminacion);
-  
-  var cargadorColorBlanco = new THREE.TextureLoader();
-  cargadorColorBlanco.load("marmol_blanco.jpg",AJEDREZ.colorBlanco);
-  var cargadorColorNegro = new THREE.TextureLoader();
-  cargadorColorNegro.load("marmol_negro.jpg",AJEDREZ.colorNegro);
-  
+    
   AJEDREZ.tablero();
   var cargadorBase = new THREE.TextureLoader();
-  cargadorBase.load("madera.JPG",AJEDREZ.base);
+  cargadorBase.load("madera.JPG",AJEDREZ.base); 
   
-  AJEDREZ.torreBlanca1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
-  AJEDREZ.torreBlanca2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolBlanco);
-  AJEDREZ.torreNegra1 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
-  AJEDREZ.torreNegra2 = new THREE.Mesh( new AJEDREZ.torreForma(), AJEDREZ.marmolNegro);
-  AJEDREZ.torreBlanca1.position.y = 5;
-  AJEDREZ.torreBlanca2.position.x = 70;
-  AJEDREZ.torreBlanca2.position.y = 5;
-  AJEDREZ.torreBlanca2.position.z = 70;
-  AJEDREZ.torreNegra1.position.y = 5;
-  AJEDREZ.torreNegra1.position.z = 70;
-  AJEDREZ.torreNegra2.position.x = 70;
-  AJEDREZ.torreNegra2.position.y = 5;
-  AJEDREZ.escena.add(AJEDREZ.torreBlanca1);
-  AJEDREZ.escena.add(AJEDREZ.torreBlanca2);
-  AJEDREZ.escena.add(AJEDREZ.torreNegra1);
-  AJEDREZ.escena.add(AJEDREZ.torreNegra2);
+  var cargadorTorresblancas = new THREE.TextureLoader();
+  cargadorColorBlanco.load("marmol_blanco.jpg",AJEDREZ.TorresBlancas);
+  var cargadorTorresnegras = new THREE.TextureLoader();
+  cargadorColorNegro.load("marmol_negro.jpg",AJEDREZ.TorresNegras);  
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
