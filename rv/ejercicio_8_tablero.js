@@ -3,16 +3,6 @@ var mat1=0;
 var mat2=0;
 AJEDREZ.cuadros = new THREE.Object3D();
 
-AJEDREZ.colorBlanco = function (textura){
- AJEDREZ.marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
- mat1=1;
-}
-
-AJEDREZ.colorNegro = function (textura){
- AJEDREZ.marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
- mat2=1;
-}
-
 AJEDREZ.tablero = function(){
  
   var cuboForma = new THREE.BoxGeometry(10,10,10);
