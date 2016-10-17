@@ -9,9 +9,9 @@ AJEDREZ.setup = function(){
   cargadorBase.load("madera.JPG",AJEDREZ.base); 
   
   var cargadorTorresblancas = new THREE.TextureLoader();
-  cargadorColorBlanco.load("marmol_blanco.jpg",AJEDREZ.TorresBlancas);
+  cargadorTorresblancas.load("marmol_blanco.jpg",AJEDREZ.TorresBlancas);
   var cargadorTorresnegras = new THREE.TextureLoader();
-  cargadorColorNegro.load("marmol_negro.jpg",AJEDREZ.TorresNegras);  
+  cargadorTorresnegras.load("marmol_negro.jpg",AJEDREZ.TorresNegras);  
   
   var campoVision = 55; //en grados
   var relacionAspecto = window.innerWidth/window.innerHeight;
