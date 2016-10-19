@@ -5,8 +5,8 @@ AJEDREZ.setup = function(){
   AJEDREZ.escena.add(iluminacion);
     
   //AJEDREZ.tablero();
-  var cargadorBase = new THREE.TextureLoader();
-  cargadorBase.load("madera.JPG",AJEDREZ.base); 
+  //var cargadorBase = new THREE.TextureLoader();
+  //cargadorBase.load("madera.JPG",AJEDREZ.base); 
   
   var cargadorMarmolBlanco = new THREE.TextureLoader();
   cargadorMarmolBlanco.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);
