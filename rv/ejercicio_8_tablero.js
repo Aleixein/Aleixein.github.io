@@ -38,9 +38,9 @@ AJEDREZ.marmolBlanco = function(textura){
   AJEDREZ.torreBlanca1 = new THREE.Mesh( new AJEDREZ.torreForma(), colorBlanco);
   AJEDREZ.torreBlanca2 = new THREE.Mesh( new AJEDREZ.torreForma(), colorBlanco);
   AJEDREZ.torreBlanca1.position.y = 5;
+  AJEDREZ.torreBlanca1.position.z = 70;
   AJEDREZ.torreBlanca2.position.x = 70;
   AJEDREZ.torreBlanca2.position.y = 5;
-  AJEDREZ.torreBlanca2.position.z = 70;
   AJEDREZ.escena.add(AJEDREZ.torreBlanca1);
   AJEDREZ.escena.add(AJEDREZ.torreBlanca2);
     
@@ -63,9 +63,9 @@ AJEDREZ.marmolNegro = function(textura){
   AJEDREZ.torreNegra1 = new THREE.Mesh( new AJEDREZ.torreForma(), colorNegro);
   AJEDREZ.torreNegra2 = new THREE.Mesh( new AJEDREZ.torreForma(), colorNegro);
   AJEDREZ.torreNegra1.position.y = 5;
-  AJEDREZ.torreNegra1.position.z = 70;
   AJEDREZ.torreNegra2.position.x = 70;
   AJEDREZ.torreNegra2.position.y = 5;
+  AJEDREZ.torreNegra2.position.z = 70;
   AJEDREZ.escena.add(AJEDREZ.torreNegra1);
   AJEDREZ.escena.add(AJEDREZ.torreNegra2);
   
