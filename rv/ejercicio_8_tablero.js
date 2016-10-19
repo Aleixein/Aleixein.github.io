@@ -102,9 +102,12 @@ AJEDREZ.marmolNegro = function(textura){
   
   for (var i = 0; i <= 7; i++ ) {
     for ( var j = 0; j <= 7; j++ ) {
-      if ( (i+j) % 2 !== 0){                    
-        var itemNegros = new THREE.Mesh( cuboFormaN,colorNegro );
+      if ( (i+j) % 2 == 0){        
+       var wtf=0;
       }     
+      else{
+       var itemNegros = new THREE.Mesh( cuboFormaN,colorNegro );
+      }
       itemNegros.position.x = i*10;
       itemNegros.position.z = j*10;
       AJEDREZ.cuadrosBlancos.add(itemNegros);
