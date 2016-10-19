@@ -106,10 +106,10 @@ AJEDREZ.marmolNegro = function(textura){
        var wtf=0;
       }     
       else{
-       var itemNegros = new THREE.Mesh( cuboForma,colorNegro );
+       var itemNegros = new THREE.Mesh( cuboForma,colorNegro ); 
+       itemNegros.position.x = i*10;
+       itemNegros.position.z = j*10;
       }
-      itemNegros.position.x = i*10;
-      itemNegros.position.z = j*10;
       AJEDREZ.cuadrosBlancos.add(itemNegros);
     }
   }
