@@ -52,7 +52,7 @@ AJEDREZ.torreForma.prototype = new THREE.Geometry();
 
 AJEDREZ.torresBlancas = function(textura){
   var marmolBlanco = new THREE.MeshLambertMaterial( {map: textura} );
-  mat 1 = true;
+  mat1 = true;
   AJEDREZ.torreBlanca1 = new THREE.Mesh( new AJEDREZ.torreForma(), marmolBlanco);
   AJEDREZ.torreBlanca2 = new THREE.Mesh( new AJEDREZ.torreForma(), marmolBlanco);
   AJEDREZ.torreBlanca1.position.y = 5;
@@ -65,7 +65,7 @@ AJEDREZ.torresBlancas = function(textura){
 
 AJEDREZ.torresNegras = function(textura){  
   var marmolNegro = new THREE.MeshLambertMaterial( {map: textura} );
-  mat 2 = true;
+  mat2 = true;
   AJEDREZ.torreNegra1 = new THREE.Mesh( new AJEDREZ.torreForma(), marmolNegro);
   AJEDREZ.torreNegra2 = new THREE.Mesh( new AJEDREZ.torreForma(), marmolNegro);
   AJEDREZ.torreNegra1.position.y = 5;
