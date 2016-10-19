@@ -29,13 +29,18 @@ AJEDREZ.setup = function(){
   AJEDREZ.renderizador.setSize( window.innerWidth, window.innerHeight);
 }
 
+var didSetup = false;
+
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) && (AJEDREZ.torreBlanca1 !== undefined) && (AJEDREZ.torreBlanca2 !== undefined) && (AJEDREZ.torreNegra1 !== undefined) && (AJEDREZ.torreNegra2 !== undefined) )
-  
-  AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
+  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) && (AJEDREZ.torreBlanca1 !== undefined) && (AJEDREZ.torreBlanca2 !== undefined) && (AJEDREZ.torreNegra1 !== undefined) && (AJEDREZ.torreNegra2 !== undefined) ){
+    if (didSetup == false){
+      AJEDREZ.setup();
+      didSetup = true;
+    }
+    AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
+  }
 }
 
-AJEDREZ.setup();
 AJEDREZ.loop();
