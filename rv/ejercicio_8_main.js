@@ -38,6 +38,6 @@ AJEDREZ.loop = function(){
     AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
   }
 }
-
+var cuboForma = new THREE.BoxGeometry(10,10,10);
 AJEDREZ.setup();
 AJEDREZ.loop();
