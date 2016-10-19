@@ -34,7 +34,7 @@ var didSetup = false;
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( mat1 && mat 2 && mat 3 ){
+  if( mat1 && mat2 && mat3 ){
     if (didSetup == false){
       AJEDREZ.setup();
       didSetup = true;
