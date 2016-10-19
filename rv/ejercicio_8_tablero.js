@@ -110,7 +110,7 @@ AJEDREZ.marmolNegro = function(textura){
        itemNegros.position.x = i*10;
        itemNegros.position.z = j*10;
       }
-      AJEDREZ.cuadrosBlancos.add(itemNegros);
+      AJEDREZ.cuadrosNegros.add(itemNegros);
     }
   }
   AJEDREZ.escena.add(AJEDREZ.cuadrosNegros);
