@@ -70,7 +70,7 @@ AJEDREZ.marmolBlanco = function(textura){
   AJEDREZ.escena.add(AJEDREZ.torreBlanca2);
 
   AJEDREZ.cuadrosBlancos = new THREE.Object3D(); 
-  var cuboForma = new THREE.BoxGeometry(10,10,10);
+  //var cuboForma = new THREE.BoxGeometry(10,10,10);
   
   for (var i = 0; i <= 7; i++ ) {
     for ( var j = 0; j <= 7; j++ ) {
@@ -98,7 +98,7 @@ AJEDREZ.marmolNegro = function(textura){
   AJEDREZ.escena.add(AJEDREZ.torreNegra2);
  
   AJEDREZ.cuadrosNegros = new THREE.Object3D();
-  var cuboFormaN = new THREE.BoxGeometry(10,10,10);
+  //var cuboFormaN = new THREE.BoxGeometry(10,10,10);
   
   for (var i = 0; i <= 7; i++ ) {
     for ( var j = 0; j <= 7; j++ ) {
@@ -106,7 +106,7 @@ AJEDREZ.marmolNegro = function(textura){
        var wtf=0;
       }     
       else{
-       var itemNegros = new THREE.Mesh( cuboFormaN,colorNegro );
+       var itemNegros = new THREE.Mesh( cuboForma,colorNegro );
       }
       itemNegros.position.x = i*10;
       itemNegros.position.z = j*10;
