@@ -75,11 +75,11 @@ AJEDREZ.marmolBlanco = function(textura){
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){                    
-        var item = new THREE.Mesh( cuboForma,colorBlanco );
+        var itemBlancos = new THREE.Mesh( cuboForma,colorBlanco );
       }     
-      item.position.x = i*10;
-      item.position.z = j*10;
-      AJEDREZ.cuadrosBlancos.add(item);
+      itemBlancos.position.x = i*10;
+      itemBlancos.position.z = j*10;
+      AJEDREZ.cuadrosBlancos.add(itemBlancos);
     }
   }
   AJEDREZ.escena.add(AJEDREZ.cuadrosBlancos);
@@ -103,11 +103,11 @@ AJEDREZ.marmolNegro = function(textura){
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 !== 0){                    
-        var item = new THREE.Mesh( cuboForma,colorNegro );
+        var itemNegros = new THREE.Mesh( cuboForma,colorNegro );
       }
-      item.position.x = i*10;
-      item.position.z = j*10;
-      AJEDREZ.cuadrosNegros.add(item);
+      itemNegros.position.x = i*10;
+      itemNegros.position.z = j*10;
+      AJEDREZ.cuadrosNegros.add(itemNegros);
     }
   }
   AJEDREZ.escena.add(AJEDREZ.cuadrosNegros);
