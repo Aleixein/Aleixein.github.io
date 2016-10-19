@@ -7,8 +7,7 @@ AJEDREZ.tablero = function(){
   var cuboForma = new THREE.BoxGeometry(10,10,10);
   var cargadorCuadrosB = new THREE.TextureLoader();
   var cargadorCuadrosN = new THREE.TextureLoader();
-  //cargadorCuadrosB.load("marmol_blanco.jpg",marmolBlanco);
-  //cargadorCuadrosN.load("marmol_negro.jpg",marmolNegro);
+  
   for (var i = 0; i < 8; i++ ) {
     for ( var j = 0; j < 8; j++ ) {
       if ( (i+j) % 2 == 0){            
