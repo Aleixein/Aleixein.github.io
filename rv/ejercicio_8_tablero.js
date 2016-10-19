@@ -1,4 +1,7 @@
 var AJEDREZ = new Object();
+var mat1=false;
+var mat2=false;
+var mat3=false;
 
 AJEDREZ.cuadros = new THREE.Object3D();
 
