@@ -34,7 +34,7 @@ var didSetup = false;
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( (AJEDREZ.marcoMalla !== undefined) && (AJEDREZ.cuadros !== undefined) && (AJEDREZ.torreBlanca1 !== undefined) && (AJEDREZ.torreBlanca2 !== undefined) && (AJEDREZ.torreNegra1 !== undefined) && (AJEDREZ.torreNegra2 !== undefined) ){
+  if( mat1 && mat 2 && mat 3 ){
     if (didSetup == false){
       AJEDREZ.setup();
       didSetup = true;
