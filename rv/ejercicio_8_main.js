@@ -34,7 +34,7 @@ AJEDREZ.setup = function(){
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
-  if( mat1 && mat2 && mat3 ){
+  if( mat1 && mat2  ){
     AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
   }
 }
