@@ -29,18 +29,14 @@ AJEDREZ.setup = function(){
   AJEDREZ.renderizador.setSize( window.innerWidth, window.innerHeight);
 }
 
-var didSetup = 1;
 
 AJEDREZ.loop = function(){
   requestAnimationFrame(AJEDREZ.loop);
   
   if( mat1 && mat2 && mat3 ){
-    if (didSetup == 1){
-      AJEDREZ.setup();
-      didSetup = 0;
-    }
     AJEDREZ.renderizador.render( AJEDREZ.escena, AJEDREZ.camara );
   }
 }
 
+AJEDREZ.setup();
 AJEDREZ.loop();
