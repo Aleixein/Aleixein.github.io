@@ -75,10 +75,10 @@ AJEDREZ.marmolBlanco = function(textura){
   for (var i = 0; i <= 7; i++ ) {
     for ( var j = 0; j <= 7; j++ ) {
       if ( (i+j) % 2 == 0){                    
-        var itemBlancos = new THREE.Mesh( cuboForma,colorBlanco );
+        var itemBlancos = new THREE.Mesh( cuboForma,colorBlanco );       
+        itemBlancos.position.x = i*10;
+        itemBlancos.position.z = j*10;
       }     
-      itemBlancos.position.x = i*10;
-      itemBlancos.position.z = j*10;
       AJEDREZ.cuadrosBlancos.add(itemBlancos);
     }
   }
