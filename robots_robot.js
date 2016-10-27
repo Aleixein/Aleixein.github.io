@@ -65,12 +65,12 @@ Robot.prototype.operations.rotateCW = function (robot, angle){
   if (angle === undefined)
   angle = -Math.PI/2;
   robot.rotation.z += angle;
-}
+};
 
 Robot.prototype.operations.rotateCCW = function (robot, angle){
   if (angle === undefined)
   angle = Math.PI/2;
   robot.rotation.z += angle;
-}
+};
 
 //check https://gerardox1.github.io/rv/PelotitaRebota.js
