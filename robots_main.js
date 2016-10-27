@@ -102,7 +102,7 @@ Environment.prototype.sense = function(){
 Environment.prototype.plan = function(){
   for ( var i = 0; i < this.children.length; i++){
     if (this.children[i].plan !== undefined)
-    this.chilren[i].plan(this);
+    this.children[i].plan(this);
   }
 }
 
