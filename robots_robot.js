@@ -50,3 +50,27 @@ Robot.prototype.act = function(environment){
   else
   console.log('Unknown command');
 };
+
+  
+Robot.prototype.operations = {};
+  
+Robot.prototype.operations.goStraight = function(robot, distance){
+  if (distance === undefined)
+  distance = 0.5;
+  robot.position.x += distance*Math.cos(robot.rotation.z);
+  robot.position.y += distance*Math.cos(robot.rotation.z);
+};
+  
+Robot.prototype.operations.rotateCW = function (robot, angle){
+  if (angle === undefined)
+  angle = -Math.PI/2;
+  robot.rotation.z += angle;
+}
+
+Robot.prototype.operations.rotateCCW = function (robot, angle){
+  if (angle === undefined)
+  angle = Math.PI/2;
+  robot.rotation.z += angle;
+}
+
+//check https://gerardox1.github.io/rv/PelotitaRebota.js
