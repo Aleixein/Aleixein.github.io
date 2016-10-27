@@ -115,5 +115,5 @@ function loop(){
 
 var environment, camera, renderer;
 
-setup();
+Setup();
 loop();
