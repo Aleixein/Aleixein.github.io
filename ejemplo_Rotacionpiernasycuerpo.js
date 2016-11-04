@@ -32,7 +32,7 @@ loop = function(){
   requestAnimationFrame(loop);
   renderizador.render(escena,camara);
   pieza.rotateY(0.01);
-  for (int i=1; i<=30; i++){
+  for (var i=1; i<=30; i++){
     if (i>14){
       pieza.piernaIzq.rotateZ(0.01);
       pieza.piernaDer.rotateZ(-0.01);
