@@ -81,5 +81,23 @@ function Pared( size, x=0, y=0){
 
 Pared.prototype = new TRHEE.Object3D();
 
-
+function setup(){
+  entorno = new Environment;
+  camara = new THREE.PerspectiveCamera(); 
+  camara.position.z = 30;
+  camara.position.y = 2;
+  camara.lookAt(0,0,0);
+  
+  entorno.add( new Pared( 1, 7, 0 ) );
+  entorno.add( new Pared( 1, -7, 0) );
+  entorno.add( new Pared( 1, 7, 1 ) );
+  entorno.add( new Pared( 1, -7, 1) );
+  entorno.add( new Pared( 1, 7, -1) );
+  entorno.add( new Pared( 1, -7, -1));
+  
+  entorno.add( new Pelota( 0.5, 0, 0) );
+  entorno.add( new Pelota(0.5, 3.5, 0));
+  
+  entorno.add(camara);
+}
 //falta setup y loop  https://github.com/jeab94/jeab94.github.io/blob/master/rv/ejemplo-Agentes.js
