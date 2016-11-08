@@ -79,9 +79,9 @@ Environment.prototype.setMap = function(map){
   for ( var i=0; i<map.length; i++)
     for (var j=0; j<map.length; j++){
       if (map[i][j] === "T")
-        this.add( new Torre(blanco, j-_offset, -(i-_offset)));
+        this.add( new Torre(new THREE.MeshLambertMaterial( {color: 0xffffff} );, j-_offset, -(i-_offset)));
       else if (map[i][j] === "t")
-        this.add( new Torre(negro, j-_offset, -(i-_offset)));
+        this.add( new Torre(new THREE.MeshLambertMaterial( {color: 0x676767} ), j-_offset, -(i-_offset)));
     }
 }
 
