@@ -138,6 +138,7 @@ function loop(){
   environment.plan();
   environment.act();
   
+  if (mat3)
   renderer.render(environment, camera);
 }
 
