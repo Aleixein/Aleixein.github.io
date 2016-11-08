@@ -58,7 +58,7 @@ Pelota.prototype.sense = function(environment){
   if ((obstaculo1.length > 0 &&             // Determina si la distancia al primer objeto es <= al radio
       (obstaculo1[0].distance <= this.radius)) ||
       (obstaculo2.length > 0 &&             // Obstáculo 1 es en un sentido, obstáculo 2 en el otro
-      (obstaculo2[0].distance <= this.radius))
+      (obstaculo2[0].distance <= this.radius)))
         this.colision = 1;                  // Marca colisión si hay obstáculo en un sentido o en el otro
   else
         this.colision = 0;
