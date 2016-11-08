@@ -118,4 +118,4 @@ function loop(){
   
 setup();
 loop();
-//falta setup y loop  allanjmartell https://github.com/jeab94/jeab94.github.io/blob/master/rv/ejemplo-Agentes.js
+//falta setup y loop  allanjmartell  renedelarosa https://github.com/jeab94/jeab94.github.io/blob/master/rv/ejemplo-Agentes.js 
