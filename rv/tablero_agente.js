@@ -78,7 +78,59 @@ Environment.prototype.setMap = function(map){
   
   for ( var i=0; i<map.length; i++)
     for (var j=0; j<map.length; j++){
-      if (map[i][j] === "tb")
-        this.add( new Torre(blanco, j-_offset, -(i-_offset)));      
+      if (map[i][j] === "T")
+        this.add( new Torre(blanco, j-_offset, -(i-_offset)));
+      else if (map[i][j] === "t")
+        this.add( new Torre(negro, j-_offset, -(i-_offset)));
     }
 }
+
+function Setup(){
+  var mapa = new Array();
+  mapa[0] = "T      t";
+  mapa[1] = "        ";
+  mapa[2] = "        ";
+  mapa[3] = "        ";
+  mapa[4] = "        ";
+  mapa[5] = "        ";
+  mapa[6] = "        ";
+  mapa[7] = "t      T";
+  
+  environment = new Environment();
+  
+  environment.setMap(mapa);
+  
+  var campoVision = 55; //en grados
+  var relacionAspecto = window.innerWidth/window.innerHeight;
+  var planoCercano = 1;
+  var planoLejano = 600;
+
+  camera = new THREE.PerspectiveCamera( campoVision, relacionAspecto, planoCercano, planoLejano );
+
+  camera.position.x = 100;
+  camera.position.y = 100;
+  camera.position.z = 160;
+
+  camera.lookAt(0,0,0);
+  
+  renderer = new THREE.WebGLRenderer();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  document.body.appendChild( renderer.domElement );
+  
+  environment.add(camera);
+}
+
+function loop(){
+  requestAnimationFrame(loop);
+  
+  environment.sense();
+  environment.plan();
+  environment.act();
+  
+  renderer.render(environment, camera);
+}
+
+var environment, camara, renderer;
+
+Setup();
+loop();
