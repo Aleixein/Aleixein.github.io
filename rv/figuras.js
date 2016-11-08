@@ -1,3 +1,34 @@
+var mat1 = false;
+var mat2 = false;
+var mat3 = false;
+
+base = function( textura) {
+  var baseMadera = new THREE.MeshLambertMaterial( {map: textura} );
+  mat3 = true;
+  var izqForma = new THREE.BoxGeometry(10,10,100);
+  var derForma = new THREE.BoxGeometry(10,10,100);
+  var abajoForma = new THREE.BoxGeometry(80,10,10);
+  var arribaForma = new THREE.BoxGeometry(80,10,10);
+  izqForma.translate(-10,0,35);
+  derForma.translate(80,0,35);
+  abajoForma.translate(35,0,80);
+  arribaForma.translate(35,0,-10);
+  
+  var izqMalla = new THREE.Mesh(izqForma);
+  var derMalla = new THREE.Mesh(derForma);
+  var abajoMalla = new THREE.Mesh(abajoForma);
+  var arribaMalla = new THREE.Mesh(arribaForma);
+  
+  var marcoForma = new THREE.Geometry();
+  
+  marcoForma.merge( izqMalla.geometry, izqMalla.matrix );
+  marcoForma.merge( derMalla.geometry, derMalla.matrix );
+  marcoForma.merge( abajoMalla.geometry, abajoMalla.matrix );
+  marcoForma.merge( arribaMalla.geometry, arribaMalla.matrix );
+  
+  marcoMalla = new THREE.Mesh( marcoForma, baseMadera );   
+}
+
 torreForma = function(){ 
   
   THREE.Geometry.call(this);
