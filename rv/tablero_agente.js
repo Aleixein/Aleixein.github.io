@@ -86,6 +86,15 @@ Environment.prototype.setMap = function(map){
 }
 
 function Setup(){
+  var iluminacion = new THREE.AmbientLight( 0xFFFFFF );
+     
+  var cargadorBase = new THREE.TextureLoader();
+  cargadorBase.load("madera.JPG",base); 
+  //var cargadorMarmolBlanco = new THREE.TextureLoader();
+  //cargadorMarmolBlanco.load("marmol_blanco.jpg",AJEDREZ.marmolBlanco);  
+  //var cargadorMarmolNegro = new THREE.TextureLoader();
+  //cargadorMarmolNegro.load("marmol_negro.jpg",AJEDREZ.marmolNegro); 
+  
   var mapa = new Array();
   mapa[0] = "T      t";
   mapa[1] = "        ";
@@ -117,7 +126,9 @@ function Setup(){
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild( renderer.domElement );
   
+  environment.add(iluminacion);
   environment.add(camera);
+  environment.add(marcoMalla);
 }
 
 function loop(){
@@ -130,7 +141,7 @@ function loop(){
   renderer.render(environment, camera);
 }
 
-var environment, camara, renderer;
+var environment, camara, renderer, marcoMalla;
 
 Setup();
 loop();
