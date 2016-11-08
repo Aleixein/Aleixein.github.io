@@ -99,5 +99,23 @@ function setup(){
   entorno.add( new Pelota(0.5, 3.5, 0));
   
   entorno.add(camara);
+  
+  var lienzo = document.getElementById("ejemplo-Agentes");
+  
+  renderer = new THREE.WebGLRenderer( { canvas: lienzo, antialias: true } );
+  renderer.setSize( window.innerHeight*.95, window.innerHeight*.95);
+  document.body.appendChild(renderer.domElement);
 }
+  
+function loop(){
+  requestAnimationFrame(loop);
+  
+  entorno.sense();
+  entorno.plan();
+  entorno.act();
+  renderer.render(entorno, camara);  
+}
+  
+setup();
+loop();
 //falta setup y loop  https://github.com/jeab94/jeab94.github.io/blob/master/rv/ejemplo-Agentes.js
