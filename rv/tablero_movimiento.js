@@ -3482,7 +3482,7 @@ function setup(){
    escena = new Environment();
 	
    camara = new THREE.PerspectiveCamera();
-   camara.position.y = 100;
+   camara.position.y = 150;
    camara.position.x = 100;
    camara.position.z = 40;
    camara.lookAt(new THREE.Vector3(40, 0, 40));
