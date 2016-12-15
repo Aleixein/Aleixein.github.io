@@ -14,8 +14,8 @@ var objetivo, referencia, indicador=0;
 var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('marmol_negro.jpg') });
 var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('marmol_blanco.jpg') });
 var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('madera.JPG') });
-var GrisLiso = new THREE.MeshLambertMaterial({color: 0xD3D3D3});
-var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
+//var GrisLiso = new THREE.MeshLambertMaterial({color: 0xD3D3D3});
+//var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 
 //Sensor
 function Sensor(position,direction){ 
@@ -3489,22 +3489,22 @@ function setup(){
 
    var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
    luzPuntual1.position.x = -100;
-   luzPuntual1.position.y = 300;
+   luzPuntual1.position.y = 100;
    luzPuntual1.position.z = -10;
 	
    var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
    luzPuntual2.position.x = 90;
-   luzPuntual2.position.y = 300;
+   luzPuntual2.position.y = 100;
    luzPuntual2.position.z = -10;
 	
    var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
    luzPuntual3.position.x = -10;
-   luzPuntual3.position.y = 300;
+   luzPuntual3.position.y = 100;
    luzPuntual3.position.z = 90;
 	
    var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
    luzPuntual4.position.x = 90;
-   luzPuntual4.position.y = 300;
+   luzPuntual4.position.y = 100;
    luzPuntual4.position.z = 90;
 
    renderizador = new THREE.WebGLRenderer();
@@ -3621,10 +3621,10 @@ function setup(){
    	alfilBlanco2 = new PeonBlanco(55, 10, 75); 
    	escena.add(alfilNegro2, alfilBlanco2);
    	torreNegra1 = new TorreNegra(5, 10, 5);
-	  torreBlanca1 = new TorreBlanca(5, 10, 75);
+	torreBlanca1 = new TorreBlanca(5, 10, 75);
    	escena.add(torreNegra1, torreBlanca1);
    	torreNegra2 = new TorreNegra(75, 10, 5);
-	  torreBlanca2 = new TorreBlanca(75, 10, 75);
+	torreBlanca2 = new TorreBlanca(75, 10, 75);
    	escena.add(torreNegra2, torreBlanca2);
 	
 	referencia = new Referencia(5, 0, 75); 
