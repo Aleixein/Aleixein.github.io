@@ -11,9 +11,9 @@ var material;
 var objetivo, referencia, indicador=0;
 
 //Texturas
-var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('marmol_negro.jpg') });
-var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('marmol_blanco.jpg') });
-var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('madera.JPG') });
+var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('black_marmol.jpg') });
+var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('white_marmol.jpg') });
+var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('wood.jpg') });
 var GrisLiso = new THREE.MeshLambertMaterial({color: 0xD3D3D3});
 var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 
@@ -3483,29 +3483,30 @@ function setup(){
 	
    camara = new THREE.PerspectiveCamera();
    camara.position.y = 150;
-   camara.position.x = 45;
-   camara.position.z = 150;
+   camara.position.x = 40;
+   camara.position.z = 100;
    camara.lookAt(new THREE.Vector3(40, 0, 40));
 
-   var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual1.position.x = -100;
-   luzPuntual1.position.y = 100;
-   luzPuntual1.position.z = -100;
+   var luzPuntual1 = new THREE.PointLight(0xFFFFFF,1);
+   luzPuntual1.position.x = 10;
+   luzPuntual1.position.y = 300;
+   luzPuntual1.position.z = 10;
 	
-   var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual2.position.x = 180;
-   luzPuntual2.position.y = 100;
-   luzPuntual2.position.z = -100;
+   var luzPuntual2 = new THREE.PointLight(0xFFFFFF,1);
+   luzPuntual2.position.x = 90;
+   luzPuntual2.position.y = 300;
+   luzPuntual2.position.z = 10;
+
 	
-   var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual3.position.x = -100;
-   luzPuntual3.position.y = 100;
-   luzPuntual3.position.z = 180;
+   var luzPuntual3 = new THREE.PointLight(0xFFFFFF,1);
+   luzPuntual3.position.x = 10;
+   luzPuntual3.position.y = 300;
+   luzPuntual3.position.z = 90;
 	
-   var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual4.position.x = 180;
-   luzPuntual4.position.y = 100;
-   luzPuntual4.position.z = 180;
+   var luzPuntual4 = new THREE.PointLight(0xFFFFFF,1);
+   luzPuntual4.position.x = 90;
+   luzPuntual4.position.y = 300;
+   luzPuntual4.position.z = 90;
 
    renderizador = new THREE.WebGLRenderer();
    renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
