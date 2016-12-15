@@ -3485,27 +3485,27 @@ function setup(){
    camara.position.y = 100;
    camara.position.x = 100;
    camara.position.z = 160;
-   camara.lookAt(new THREE.Vector3(40, 0, 40));
+   camara.lookAt(new THREE.Vector3(100, 0, 100));
 
    var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
    luzPuntual1.position.x = -100;
    luzPuntual1.position.y = 100;
-   luzPuntual1.position.z = -10;
+   luzPuntual1.position.z = -100;
 	
    var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual2.position.x = 90;
+   luzPuntual2.position.x = 180;
    luzPuntual2.position.y = 100;
-   luzPuntual2.position.z = -10;
+   luzPuntual2.position.z = -100;
 	
    var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual3.position.x = -10;
+   luzPuntual3.position.x = -100;
    luzPuntual3.position.y = 100;
-   luzPuntual3.position.z = 90;
+   luzPuntual3.position.z = 180;
 	
    var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
-   luzPuntual4.position.x = 90;
+   luzPuntual4.position.x = 180;
    luzPuntual4.position.y = 100;
-   luzPuntual4.position.z = 90;
+   luzPuntual4.position.z = 180;
 
    renderizador = new THREE.WebGLRenderer();
    renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
@@ -3578,11 +3578,11 @@ function setup(){
       escena.add(cubos[q]);
    }
 
-	  reyNegro = new ReyNegro(45, 10, 5);
+	reyNegro = new ReyNegro(45, 10, 5);
   	reyBlanco = new ReyBlanco(45, 10, 75);
-	  escena.add(reyNegro, reyBlanco);
+	escena.add(reyNegro, reyBlanco);
    	reinaNegra = new ReinaNegra(35, 10, 5);
-	  reinaBlanca = new ReinaBlanca(35, 10, 75);
+	reinaBlanca = new ReinaBlanca(35, 10, 75);
    	escena.add(reinaNegra, reinaBlanca);
    	caballoNegro1 = new CaballoNegro(15, 10, 5);
    	caballoBlanco1 = new CaballoBlanco(15, 10, 75); 
