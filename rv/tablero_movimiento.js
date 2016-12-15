@@ -349,7 +349,7 @@ Referencia.prototype.act = function(environment){
 						   (reyBlanco.position.x==caballoBlanco1.position.x && reyBlanco.position.z==caballoBlanco1.position.z))||
 						   (reyBlanco.position.x==caballoBlanco2.position.x && reyBlanco.position.z==caballoBlanco2.position.z))||
 						   (reyBlanco.position.x==reinaBlanca.position.x && reyBlanco.position.z==reinaBlanca.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							reyBlanco.position.x=referencia.position.x;reyBlanco.position.z=referencia.position.z;
 						}
 					} //Termino Prototype act				
@@ -447,7 +447,7 @@ Referencia.prototype.act = function(environment){
 						   (reyNegro.position.x==caballoNegro1.position.x && reyNegro.position.z==caballoNegro1.position.z))||
 						   (reyNegro.position.x==caballoNegro2.position.x && reyNegro.position.z==caballoNegro2.position.z))||
 						   (reyNegro.position.x==reinaNegra.position.x && reyNegro.position.z==reinaNegra.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							reyNegro.position.x=referencia.position.x;reyNegro.position.z=referencia.position.z;
 						}
 					} //Termino Prototype act				
@@ -547,7 +547,7 @@ Referencia.prototype.act = function(environment){
 						   (reinaBlanca.position.x==caballoBlanco1.position.x && reinaBlanca.position.z==caballoBlanco1.position.z))||
 						   (reinaBlanca.position.x==caballoBlanco2.position.x && reinaBlanca.position.z==caballoBlanco2.position.z))||
 						   (reinaBlanca.position.x==reyBlanco.position.x && reinaBlanca.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							reinaBlanca.position.x=objetivo.position.x;reinaBlanca.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act				
@@ -648,7 +648,7 @@ Referencia.prototype.act = function(environment){
 						   (reinaNegra.position.x==caballoNegro1.position.x && reinaNegra.position.z==caballoNegro1.position.z))||
 						   (reinaNegra.position.x==caballoNegro2.position.x && reinaNegra.position.z==caballoNegro2.position.z))||
 						   (reinaNegra.position.x==reyNegro.position.x && reinaNegra.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							reinaNegra.position.x=objetivo.position.x;reinaNegra.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act				
@@ -748,7 +748,7 @@ Referencia.prototype.act = function(environment){
 						   (torreBlanca1.position.x==caballoBlanco2.position.x && torreBlanca1.position.z==caballoBlanco2.position.z))||
 						   (torreBlanca1.position.x==reyBlanco.position.x && torreBlanca1.position.z==reyBlanco.position.z))||
 						   (torreBlanca1.position.x==reinaBlanca.position.x && torreBlanca1.position.z==reinaBlanca.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							torreBlanca1.position.x=objetivo.position.x;torreBlanca1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act				
@@ -847,7 +847,7 @@ Referencia.prototype.act = function(environment){
 						   (torreNegra1.position.x==caballoNegro2.position.x && torreNegra1.position.z==caballoNegro2.position.z))||
 						   (torreNegra1.position.x==reyNegro.position.x && torreNegra1.position.z==reyNegro.position.z))||
 						   (torreNegra1.position.x==reinaNegro.position.x && torreNegra1.position.z==reinaNegra.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							torreNegra1.position.x=objetivo.position.x;torreNegra1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act				
@@ -946,7 +946,7 @@ Referencia.prototype.act = function(environment){
 						   (torreBlanca2.position.x==caballoBlanco2.position.x && torreBlanca2.position.z==caballoBlanco2.position.z))||
 						   (torreBlanca2.position.x==reyBlanco.position.x && torreBlanca2.position.z==reyBlanco.position.z))||
 						   (torreBlanca2.position.x==reinaBlanca.position.x && torreBlanca2.position.z==reinaBlanca.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							torreBlanca2.position.x=objetivo.position.x;torreBlanca2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act				
@@ -1046,7 +1046,7 @@ Referencia.prototype.act = function(environment){
 						   (torreNegra2.position.x==caballoNegro2.position.x && torreNegra2.position.z==caballoNegro2.position.z))||
 						   (torreNegra2.position.x==reyNegro.position.x && torreNegra2.position.z==reyNegro.position.z))||
 						   (torreNegra2.position.x==reinaNegra.position.x && torreNegra2.position.z==reinaNegra.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							torreNegra2.position.x=objetivo.position.x;torreNegra2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act				
@@ -1146,7 +1146,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco1.position.x==caballoBlanco2.position.x && peonBlanco1.position.z==caballoBlanco2.position.z))||
 						(peonBlanco1.position.x==reinaBlanca.position.x && peonBlanco1.position.z==reinaBlanca.position.z))||
 						(peonBlanco1.position.x==reyBlanco.position.x && peonBlanco1.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco1.position.x=objetivo.position.x;peonBlanco1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1247,7 +1247,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco2.position.x==caballoBlanco2.position.x && peonBlanco2.position.z==caballoBlanco2.position.z))||
 						(peonBlanco2.position.x==reinaBlanca.position.x && peonBlanco2.position.z==reinaBlanca.position.z))||
 						(peonBlanco2.position.x==reyBlanco.position.x && peonBlanco2.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco2.position.x=objetivo.position.x;peonBlanco2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1347,7 +1347,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco3.position.x==caballoBlanco2.position.x && peonBlanco3.position.z==caballoBlanco2.position.z))||
 						(peonBlanco3.position.x==reinaBlanca.position.x && peonBlanco3.position.z==reinaBlanca.position.z))||
 						(peonBlanco3.position.x==reyBlanco.position.x && peonBlanco3.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco3.position.x=objetivo.position.x;peonBlanco3.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1447,7 +1447,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco4.position.x==caballoBlanco2.position.x && peonBlanco4.position.z==caballoBlanco2.position.z))||
 						(peonBlanco4.position.x==reinaBlanca.position.x && peonBlanco4.position.z==reinaBlanca.position.z))||
 						(peonBlanco4.position.x==reyBlanco.position.x && peonBlanco4.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco4.position.x=objetivo.position.x;peonBlanco4.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1547,7 +1547,7 @@ Referencia.prototype.act = function(environment){
 				(peonBlanco5.position.x==caballoBlanco2.position.x && peonBlanco5.position.z==caballoBlanco2.position.z))||
 				(peonBlanco5.position.x==reinaBlanca.position.x && peonBlanco5.position.z==reinaBlanca.position.z))||
 				(peonBlanco5.position.x==reyBlanco.position.x && peonBlanco5.position.z==reyBlanco.position.z)){
-					alert("Movimiento inválido");
+					alert("Movimiento invalido");
 					peonBlanco5.position.x=objetivo.position.x;peonBlanco5.position.z=objetivo.position.z;
 				}
 			} //Termino Prototype act
@@ -1647,7 +1647,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco6.position.x==caballoBlanco2.position.x && peonBlanco6.position.z==caballoBlanco2.position.z))||
 						(peonBlanco6.position.x==reinaBlanca.position.x && peonBlanco6.position.z==reinaBlanca.position.z))||
 						(peonBlanco6.position.x==reyBlanco.position.x && peonBlanco6.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco6.position.x=objetivo.position.x;peonBlanco6.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1747,7 +1747,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco7.position.x==caballoBlanco2.position.x && peonBlanco7.position.z==caballoBlanco2.position.z))||
 						(peonBlanco7.position.x==reinaBlanca.position.x && peonBlanco7.position.z==reinaBlanca.position.z))||
 						(peonBlanco7.position.x==reyBlanco.position.x && peonBlanco7.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco7.position.x=objetivo.position.x;peonBlanco7.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1847,7 +1847,7 @@ Referencia.prototype.act = function(environment){
 						(peonBlanco8.position.x==caballoBlanco2.position.x && peonBlanco8.position.z==caballoBlanco2.position.z))||
 						(peonBlanco8.position.x==reinaBlanca.position.x && peonBlanco8.position.z==reinaBlanca.position.z))||
 						(peonBlanco8.position.x==reyBlanco.position.x && peonBlanco8.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonBlanco8.position.x=objetivo.position.x;peonBlanco8.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -1947,7 +1947,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro1.position.x==caballoNegro2.position.x && peonNegro1.position.z==caballoNegro2.position.z))||
 						(peonNegro1.position.x==reinaNegra.position.x && peonNegro1.position.z==reinaNegra.position.z))||
 						(peonNegro1.position.x==reyNegro.position.x && peonNegro1.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro1.position.x=objetivo.position.x;peonNegro1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2047,7 +2047,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro2.position.x==caballoNegro2.position.x && peonNegro2.position.z==caballoNegro2.position.z))||
 						(peonNegro2.position.x==reinaNegra.position.x && peonNegro2.position.z==reinaNegra.position.z))||
 						(peonNegro2.position.x==reyNegro.position.x && peonNegro2.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro2.position.x=objetivo.position.x;peonNegro2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2147,7 +2147,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro3.position.x==caballoNegro2.position.x && peonNegro3.position.z==caballoNegro2.position.z))||
 						(peonNegro3.position.x==reinaNegra.position.x && peonNegro3.position.z==reinaNegra.position.z))||
 						(peonNegro3.position.x==reyNegro.position.x && peonNegro3.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro3.position.x=objetivo.position.x;peonNegro3.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2247,7 +2247,7 @@ Referencia.prototype.act = function(environment){
 					(peonNegro4.position.x==caballoNegro2.position.x && peonNegro4.position.z==caballoNegro2.position.z))||
 					(peonNegro4.position.x==reinaNegra.position.x && peonNegro4.position.z==reinaNegra.position.z))||
 					(peonNegro4.position.x==reyNegro.position.x && peonNegro4.position.z==reyNegro.position.z)){
-						alert("Movimiento inválido");
+						alert("Movimiento invalido");
 						peonNegro4.position.x=objetivo.position.x;peonNegro4.position.z=objetivo.position.z;
 					}
 				} //Termino Prototype act
@@ -2347,7 +2347,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro5.position.x==caballoNegro2.position.x && peonNegro5.position.z==caballoNegro2.position.z))||
 						(peonNegro5.position.x==reinaNegra.position.x && peonNegro5.position.z==reinaNegra.position.z))||
 						(peonNegro5.position.x==reyNegro.position.x && peonNegro5.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro5.position.x=objetivo.position.x;peonNegro5.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2447,7 +2447,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro6.position.x==caballoNegro2.position.x && peonNegro6.position.z==caballoNegro2.position.z))||
 						(peonNegro6.position.x==reinaNegra.position.x && peonNegro6.position.z==reinaNegra.position.z))||
 						(peonNegro6.position.x==reyNegro.position.x && peonNegro6.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro6.position.x=objetivo.position.x;peonNegro6.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2547,7 +2547,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro7.position.x==caballoNegro2.position.x && peonNegro7.position.z==caballoNegro2.position.z))||
 						(peonNegro7.position.x==reinaNegra.position.x && peonNegro7.position.z==reinaNegra.position.z))||
 						(peonNegro7.position.x==reyNegro.position.x && peonNegro7.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro7.position.x=objetivo.position.x;peonNegro7.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2647,7 +2647,7 @@ Referencia.prototype.act = function(environment){
 						(peonNegro8.position.x==caballoNegro2.position.x && peonNegro8.position.z==caballoNegro2.position.z))||
 						(peonNegro8.position.x==reinaNegra.position.x && peonNegro8.position.z==reinaNegra.position.z))||
 						(peonNegro8.position.x==reyNegro.position.x && peonNegro8.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							peonNegro8.position.x=objetivo.position.x;peonNegro8.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2746,7 +2746,7 @@ Referencia.prototype.act = function(environment){
 						(alfilBlanco1.position.x==caballoBlanco2.position.x && alfilBlanco1.position.z==caballoBlanco2.position.z))||
 						(alfilBlanco1.position.x==reinaBlanca.position.x && alfilBlanco1.position.z==reinaBlanca.position.z))||
 						(alfilBlanco1.position.x==reyBlanco.position.x && alfilBlanco1.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							alfilBlanco1.position.x=objetivo.position.x;alfilBlanco1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2846,7 +2846,7 @@ Referencia.prototype.act = function(environment){
 						(alfilBlanco2.position.x==caballoBlanco2.position.x && alfilBlanco2.position.z==caballoBlanco2.position.z))||
 						(alfilBlanco2.position.x==reinaBlanca.position.x && alfilBlanco2.position.z==reinaBlanca.position.z))||
 						(alfilBlanco2.position.x==reyBlanco.position.x && alfilBlanco2.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							alfilBlanco2.position.x=objetivo.position.x;alfilBlanco2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -2946,7 +2946,7 @@ Referencia.prototype.act = function(environment){
 						(alfilNegro1.position.x==caballoNegro2.position.x && alfilNegro1.position.z==caballoNegro2.position.z))||
 						(alfilNegro1.position.x==reinaNegra.position.x && alfilNegro1.position.z==reinaNegra.position.z))||
 						(alfilNegro1.position.x==reyNegro.position.x && alfilNegro1.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							alfilNegro1.position.x=objetivo.position.x;alfilNegro1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -3046,7 +3046,7 @@ Referencia.prototype.act = function(environment){
 						(alfilNegro2.position.x==caballoNegro2.position.x && alfilNegro2.position.z==caballoNegro2.position.z))||
 						(alfilNegro2.position.x==reinaNegra.position.x && alfilNegro2.position.z==reinaNegra.position.z))||
 						(alfilNegro2.position.x==reyNegro.position.x && alfilNegro2.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							alfilNegro2.position.x=objetivo.position.x;alfilNegro2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -3147,7 +3147,7 @@ Referencia.prototype.act = function(environment){
 						(caballoBlanco1.position.x==caballoBlanco2.position.x && caballoBlanco1.position.z==caballoBlanco2.position.z))||
 						(caballoBlanco1.position.x==reinaBlanca.position.x && caballoBlanco1.position.z==reinaBlanca.position.z))||
 						(caballoBlanco1.position.x==reyBlanco.position.x && caballoBlanco1.position.z==reyBlanco.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							caballoBlanco1.position.x=objetivo.position.x;caballoBlanco1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -3247,7 +3247,7 @@ Referencia.prototype.act = function(environment){
 						(caballoNegro1.position.x==caballoNegro2.position.x && caballoNegro1.position.z==caballoNegro2.position.z))||
 						(caballoNegro1.position.x==reinaNegra.position.x && caballoNegro1.position.z==reinaNegra.position.z))||
 						(caballoNegro1.position.x==reyNegro.position.x && caballoNegro1.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							caballoNegro1.position.x=objetivo.position.x;caballoNegro1.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
@@ -3347,7 +3347,7 @@ Referencia.prototype.act = function(environment){
 					(caballoBlanco2.position.x==caballoBlanco1.position.x && caballoBlanco2.position.z==caballoBlanco1.position.z))||
 					(caballoBlanco2.position.x==reinaBlanca.position.x && caballoBlanco2.position.z==reinaBlanca.position.z))||
 					(caballoBlanco2.position.x==reyBlanco.position.x && caballoBlanco2.position.z==reyBlanco.position.z)){
-						alert("Movimiento inválido");
+						alert("Movimiento invalido");
 						caballoBlanco2.position.x=objetivo.position.x;caballoBlanco2.position.z=objetivo.position.z;
 					}
 				} //Termino Prototype act
@@ -3447,7 +3447,7 @@ Referencia.prototype.act = function(environment){
 						(caballoNegro2.position.x==caballoNegro1.position.x && caballoNegro2.position.z==caballoNegro1.position.z))||
 						(caballoNegro2.position.x==reinaNegra.position.x && caballoNegro2.position.z==reinaNegra.position.z))||
 						(caballoNegro2.position.x==reyNegro.position.x && caballoNegro2.position.z==reyNegro.position.z)){
-							alert("Movimiento inválido");
+							alert("Movimiento invalido");
 							caballoNegro2.position.x=objetivo.position.x;caballoNegro2.position.z=objetivo.position.z;
 						}
 					} //Termino Prototype act
