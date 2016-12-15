@@ -241,7 +241,7 @@ Referencia.prototype.act = function(environment){
 				}
 			break;
 		case 39 :  //Right 
-				if(referencia.position.Z>=15){
+				if(referencia.position.z>=15){
 					referencia.translateZ(-10);
 				}
 			break;
