@@ -3489,22 +3489,22 @@ function setup(){
 
    var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
    luzPuntual1.position.x = -100;
-   luzPuntual1.position.y = 100;
+   luzPuntual1.position.y = 250;
    luzPuntual1.position.z = -100;
 	
    var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
    luzPuntual2.position.x = 180;
-   luzPuntual2.position.y = 100;
+   luzPuntual2.position.y = 250;
    luzPuntual2.position.z = -100;
 	
    var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
    luzPuntual3.position.x = -100;
-   luzPuntual3.position.y = 100;
+   luzPuntual3.position.y = 250;
    luzPuntual3.position.z = 180;
 	
    var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
    luzPuntual4.position.x = 180;
-   luzPuntual4.position.y = 100;
+   luzPuntual4.position.y = 250;
    luzPuntual4.position.z = 180;
 
    renderizador = new THREE.WebGLRenderer();
