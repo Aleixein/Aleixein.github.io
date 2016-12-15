@@ -3487,22 +3487,22 @@ function setup(){
    camara.position.z = 160;
    camara.lookAt(new THREE.Vector3(40, 0, 40));
 
-   var luzPuntual1 = new THREE.PointLight(0xFFFFFF,1);
-   luzPuntual1.position.x = 10;
+   var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
+   luzPuntual1.position.x = -100;
    luzPuntual1.position.y = 300;
-   luzPuntual1.position.z = 10;
+   luzPuntual1.position.z = -10;
 	
-   var luzPuntual2 = new THREE.PointLight(0xFFFFFF,1);
+   var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
    luzPuntual2.position.x = 90;
    luzPuntual2.position.y = 300;
-   luzPuntual2.position.z = 10;
+   luzPuntual2.position.z = -10;
 	
-   var luzPuntual3 = new THREE.PointLight(0xFFFFFF,1);
-   luzPuntual3.position.x = 10;
+   var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
+   luzPuntual3.position.x = -10;
    luzPuntual3.position.y = 300;
    luzPuntual3.position.z = 90;
 	
-   var luzPuntual4 = new THREE.PointLight(0xFFFFFF,1);
+   var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
    luzPuntual4.position.x = 90;
    luzPuntual4.position.y = 300;
    luzPuntual4.position.z = 90;
