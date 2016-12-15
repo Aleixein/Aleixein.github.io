@@ -233,23 +233,23 @@ Referencia.prototype.act = function(environment){
 	var key = pieza.which;
         switch (key){	
 		case 37: //Left
+				if(referencia.position.z<=65){
+					referencia.translateZ(10);
+				}
+			break;
+		case 38 :  //Up
 				if(referencia.position.x>=15){
 					referencia.translateX(-10);
 				}
 			break;
-		case 38 :  //Up
+		case 39 :  //Right 
 				if(referencia.position.z>=15){
 					referencia.translateZ(-10);
 				}
 			break;
-		case 39 :  //Right 
+		case 40 :  //Down
 				if(referencia.position.x<=65){
 					referencia.translateX(10);
-				}
-			break;
-		case 40 :  //Down
-				if(referencia.position.z<=65){
-					referencia.translateZ(10);
 				}
 			break;
 		case 13 :  //Enter
@@ -3480,33 +3480,32 @@ Negativo.prototype = new Agent();
 function setup(){
    
    escena = new Environment();
-	
+
    camara = new THREE.PerspectiveCamera();
    camara.position.y = 150;
-   camara.position.x = 40;
-   camara.position.z = 100;
+   camara.position.x = 45;
+   camara.position.z = 150;
    camara.lookAt(new THREE.Vector3(40, 0, 40));
 
-   var luzPuntual1 = new THREE.PointLight(0xFFFFFF,1);
-   luzPuntual1.position.x = 10;
-   luzPuntual1.position.y = 300;
-   luzPuntual1.position.z = 10;
+   var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
+   luzPuntual1.position.x = -100;
+   luzPuntual1.position.y = 100;
+   luzPuntual1.position.z = -100;
 	
-   var luzPuntual2 = new THREE.PointLight(0xFFFFFF,1);
-   luzPuntual2.position.x = 90;
-   luzPuntual2.position.y = 300;
-   luzPuntual2.position.z = 10;
-
+   var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
+   luzPuntual2.position.x = 180;
+   luzPuntual2.position.y = 100;
+   luzPuntual2.position.z = -100;
 	
-   var luzPuntual3 = new THREE.PointLight(0xFFFFFF,1);
-   luzPuntual3.position.x = 10;
-   luzPuntual3.position.y = 300;
-   luzPuntual3.position.z = 90;
+   var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
+   luzPuntual3.position.x = -100;
+   luzPuntual3.position.y = 100;
+   luzPuntual3.position.z = 180;
 	
-   var luzPuntual4 = new THREE.PointLight(0xFFFFFF,1);
-   luzPuntual4.position.x = 90;
-   luzPuntual4.position.y = 300;
-   luzPuntual4.position.z = 90;
+   var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
+   luzPuntual4.position.x = 180;
+   luzPuntual4.position.y = 100;
+   luzPuntual4.position.z = 180;
 
    renderizador = new THREE.WebGLRenderer();
    renderizador.setSize( window.innerHeight*.95, window.innerHeight*.95 );
