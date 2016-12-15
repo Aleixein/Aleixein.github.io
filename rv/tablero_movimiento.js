@@ -233,23 +233,23 @@ Referencia.prototype.act = function(environment){
 	var key = pieza.which;
         switch (key){	
 		case 37: //Left
+				if(referencia.position.z>=15){
+					referencia.translateZ(10);
+				}
+			break;
+		case 38 :  //Up
 				if(referencia.position.x>=15){
 					referencia.translateX(-10);
 				}
 			break;
-		case 38 :  //Up
-				if(referencia.position.z>=15){
+		case 39 :  //Right 
+				if(referencia.position.z<=65){
 					referencia.translateZ(-10);
 				}
 			break;
-		case 39 :  //Right 
+		case 40 :  //Down
 				if(referencia.position.x<=65){
 					referencia.translateX(10);
-				}
-			break;
-		case 40 :  //Down
-				if(referencia.position.z<=65){
-					referencia.translateZ(10);
 				}
 			break;
 		case 13 :  //Enter
@@ -3483,7 +3483,7 @@ function setup(){
 	
    camara = new THREE.PerspectiveCamera();
    camara.position.y = 150;
-   camara.position.x = 100;
+   camara.position.x = 130;
    camara.position.z = 40;
    camara.lookAt(new THREE.Vector3(40, 0, 40));
 
