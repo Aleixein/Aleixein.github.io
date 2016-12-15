@@ -234,7 +234,7 @@ Referencia.prototype.act = function(environment){
         switch (key){	
 		case 37: //Left
 				if(referencia.position.z>=15){
-					referencia.translateZ(10);
+					referencia.translateZ(-10);
 				}
 			break;
 		case 38 :  //Up
@@ -244,7 +244,7 @@ Referencia.prototype.act = function(environment){
 			break;
 		case 39 :  //Right 
 				if(referencia.position.z<=65){
-					referencia.translateZ(-10);
+					referencia.translateZ(10);
 				}
 			break;
 		case 40 :  //Down
