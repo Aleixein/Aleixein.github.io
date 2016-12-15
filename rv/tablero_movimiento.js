@@ -233,8 +233,8 @@ Referencia.prototype.act = function(environment){
 	var key = pieza.which;
         switch (key){	
 		case 37: //Left
-				if(referencia.position.z>=15){
-					referencia.translateZ(-10);
+				if(referencia.position.z<=65){
+					referencia.translateZ(10);
 				}
 			break;
 		case 38 :  //Up
@@ -243,8 +243,8 @@ Referencia.prototype.act = function(environment){
 				}
 			break;
 		case 39 :  //Right 
-				if(referencia.position.z<=65){
-					referencia.translateZ(10);
+				if(referencia.position.z>=15){
+					referencia.translateZ(-10);
 				}
 			break;
 		case 40 :  //Down
