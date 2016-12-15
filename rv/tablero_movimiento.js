@@ -14,8 +14,6 @@ var objetivo, referencia, indicador=0;
 var Gris = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('marmol_negro.jpg') });
 var Blanco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('marmol_blanco.jpg') });
 var Marco = new THREE.MeshLambertMaterial({ map: THREE.ImageUtils.loadTexture('madera.JPG') });
-//var GrisLiso = new THREE.MeshLambertMaterial({color: 0xD3D3D3});
-//var BlancoLiso = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
 
 //Sensor
 function Sensor(position,direction){ 
@@ -199,9 +197,9 @@ PeonBlanco.prototype = new Agent();
 AlfilNegro.prototype = new Agent();
 AlfilBlanco.prototype = new Agent();
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //////////////////////////////////////////////  CONSTRUCTOR OBJETIVO  ///////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function Objetivo(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
   var texturaObjetivo = new THREE.MeshLambertMaterial({color: 0xff0000});
@@ -213,9 +211,9 @@ function Objetivo(x=0,y=0,z=0){
 
 Objetivo.prototype = new Agent();
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 //////////////////////////////////////////////  CONSTRUCTOR REFERENCIA  ///////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function Referencia(x=0,y=0,z=0){
   Agent.call(this,x,y,z);
   var texturaReferencia = new THREE.MeshLambertMaterial({color: 0x00ff00});
@@ -233,23 +231,23 @@ Referencia.prototype.act = function(environment){
 	var key = pieza.which;
         switch (key){	
 		case 37: //Left
+				if(referencia.position.z<=65){
+					referencia.translateZ(10);
+				}
+			break;
+		case 38 :  //Up
 				if(referencia.position.x>=15){
 					referencia.translateX(-10);
 				}
 			break;
-		case 38 :  //Up
-				if(referencia.position.z>=15){
+		case 39 :  //Right 
+				if(referencia.position.Z>=15){
 					referencia.translateZ(-10);
 				}
 			break;
-		case 39 :  //Right 
+		case 40 :  //Down
 				if(referencia.position.x<=65){
 					referencia.translateX(10);
-				}
-			break;
-		case 40 :  //Down
-				if(referencia.position.z<=65){
-					referencia.translateZ(10);
 				}
 			break;
 		case 13 :  //Enter
@@ -3483,28 +3481,28 @@ function setup(){
 	
    camara = new THREE.PerspectiveCamera();
    camara.position.y = 150;
-   camara.position.x = 45;
-   camara.position.z = 150;
+   camara.position.x = 150;
+   camara.position.z = 40;
    camara.lookAt(new THREE.Vector3(40, 0, 40));
 
    var luzPuntual1 = new THREE.PointLight(0xFFFFFF);
    luzPuntual1.position.x = -100;
-   luzPuntual1.position.y = 100;
+   luzPuntual1.position.y = 250;
    luzPuntual1.position.z = -100;
 	
    var luzPuntual2 = new THREE.PointLight(0xFFFFFF);
    luzPuntual2.position.x = 180;
-   luzPuntual2.position.y = 100;
+   luzPuntual2.position.y = 250;
    luzPuntual2.position.z = -100;
 	
    var luzPuntual3 = new THREE.PointLight(0xFFFFFF);
    luzPuntual3.position.x = -100;
-   luzPuntual3.position.y = 100;
+   luzPuntual3.position.y = 250;
    luzPuntual3.position.z = 180;
 	
    var luzPuntual4 = new THREE.PointLight(0xFFFFFF);
    luzPuntual4.position.x = 180;
-   luzPuntual4.position.y = 100;
+   luzPuntual4.position.y = 250;
    luzPuntual4.position.z = 180;
 
    renderizador = new THREE.WebGLRenderer();
